@@ -27,7 +27,7 @@ async def hmm(event):
     await event.reply(k)
 
 
-__mod_name__ = "Tᴏᴏʟs"
+__mod_name__ = "ᴛᴏᴏʟs"
 
 __help__ = """
 
