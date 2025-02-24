@@ -735,8 +735,7 @@ def main():
             dispatcher.bot.send_photo(
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
-                caption=f"""
-            {BOT_NAME} ᴜᴅᴀʜ ɪᴅᴜᴘ...""",
+                caption=f"""{BOT_NAME} ᴜᴅᴀʜ ɪᴅᴜᴘ...""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
