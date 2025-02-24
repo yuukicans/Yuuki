@@ -59,4 +59,4 @@ dispatcher.add_handler(WIKI_HANDLER)
 __help__ = """
 » /wiki (text) *:* Searchs about the given text on wikipedia.
 """
-__mod_name__ = "Wɪᴋɪ"
+__mod_name__ = "ᴡɪᴋɪ"
