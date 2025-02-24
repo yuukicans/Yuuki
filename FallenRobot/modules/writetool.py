@@ -12,12 +12,12 @@ def handwrite(update: Update, context: CallbackContext):
         text = message.reply_to_message.text
     else:
         text = update.effective_message.text.split(None, 1)[1]
-    m = message.reply_text("Writing the text...")
+    m = message.reply_text("ᴍᴇɴᴜʟɪꜱ ᴛᴇxᴛ ʟᴜ...")
     req = requests.get(f"https://api.sdbots.tk/write?text={text}").url
     message.reply_photo(
         photo=req,
         caption=f"""
-Successfully Written Text 💘
+ʙᴇʀʜᴀꜱɪʟ ᴍᴇɴᴜʟɪꜱ ᴛᴇxᴛ 💘
 
 ✨ **Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
 🥀 **Requested by :** {update.effective_user.first_name}
@@ -43,7 +43,7 @@ __help__ = """
 WRITE_HANDLER = DisableAbleCommandHandler("write", handwrite, run_async=True)
 dispatcher.add_handler(WRITE_HANDLER)
 
-__mod_name__ = "WʀɪᴛᴇTᴏᴏʟ"
+__mod_name__ = "ᴡʀɪᴛᴇᴛᴏᴏʟ"
 
 __command_list__ = ["write"]
 __handlers__ = [WRITE_HANDLER]
