@@ -115,7 +115,7 @@ if is_module_loaded(FILENAME):
             )
 
         else:
-            message.reply_text("No log channel has been set for this group!")
+            message.reply_text("Tidak Ada Saluran Log Yang Ditetapkan Untuk Grup Ini!")
 
     @user_admin
     def setlog(update: Update, context: CallbackContext):
@@ -124,7 +124,7 @@ if is_module_loaded(FILENAME):
         chat = update.effective_chat
         if chat.type == chat.CHANNEL:
             message.reply_text(
-                "Now, forward the /setlog to the group you want to tie this channel to!"
+                "Sekarang, teruskan /setLog ke grup yang ingin Anda ikat saluran ini!"
             )
 
         elif message.forward_from_chat:
@@ -136,28 +136,28 @@ if is_module_loaded(FILENAME):
                     pass
                 else:
                     LOGGER.exception(
-                        "Error deleting message in log channel. Should work anyway though."
+                        "Kesalahan Menghapus Pesan di Saluran Log.  Harus tetap bekerja tetap."
                     )
 
             try:
                 bot.send_message(
                     message.forward_from_chat.id,
-                    f"This channel has been set as the log channel for {chat.title or chat.first_name}.",
+                    f"Saluran ini telah ditetapkan sebagai saluran log {chat.title or chat.first_name}.",
                 )
             except Unauthorized as excp:
-                if excp.message == "Forbidden: bot is not a member of the channel chat":
+                if excp.message == "Terlarang: Bot bukan anggota obrolan saluran":
                     bot.send_message(chat.id, "Successfully set log channel!")
                 else:
-                    LOGGER.exception("ERROR in setting the log channel.")
+                    LOGGER.exception("Kesalahan dalam Mengatur Saluran Log.")
 
-            bot.send_message(chat.id, "Successfully set log channel!")
+            bot.send_message(chat.id, "Berhasil mengatur saluran log!")
 
         else:
             message.reply_text(
-                "The steps to set a log channel are:\n"
-                " - add bot to the desired channel\n"
-                " - send /setlog to the channel\n"
-                " - forward the /setlog to the group\n"
+                "Langkah -langkah untuk mengatur saluran log adalah:\n"
+                " - Tambahkan bot ke saluran yang diinginkan\n"
+                " - Kirim /Setlog ke saluran\n"
+                " - meneruskan /setLog ke grup\n"
             )
 
     @user_admin
@@ -169,12 +169,12 @@ if is_module_loaded(FILENAME):
         log_channel = sql.stop_chat_logging(chat.id)
         if log_channel:
             bot.send_message(
-                log_channel, f"Channel has been unlinked from {chat.title}"
+                log_channel, f"Saluran telah tidak terhubung dari {chat.title}"
             )
-            message.reply_text("Log channel has been un-set.")
+            message.reply_text("Saluran log tidak diatur.")
 
         else:
-            message.reply_text("No log channel has been set yet!")
+            message.reply_text("Belum ada saluran log yang telah ditetapkan!")
 
     def __stats__():
         return f"• {sql.num_logchannels()} log channels set."
@@ -186,8 +186,8 @@ if is_module_loaded(FILENAME):
         log_channel = sql.get_chat_log_channel(chat_id)
         if log_channel:
             log_channel_info = dispatcher.bot.get_chat(log_channel)
-            return f"This group has all it's logs sent to: {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
-        return "No log channel is set for this group!"
+            return f"Grup ini memiliki semua log yang dikirim ke: {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
+        return "Tidak ada saluran log yang diatur untuk grup ini!"
 
     __help__ = """
 *Admins only:*
