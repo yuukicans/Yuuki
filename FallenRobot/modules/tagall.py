@@ -10,13 +10,13 @@ from FallenRobot import telethn as client
 spam_chats = []
 
 
-@client.on(events.NewMessage(pattern="^/tagall ?(.*)"))
+@client.on(events.NewMessage(pattern="^/all ?(.*)"))
 @client.on(events.NewMessage(pattern="^@all ?(.*)"))
 async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
         return await event.respond(
-            "__This command can be use in groups and channels!__"
+            "ᴍᴏᴅᴜʟᴇ ɪɴɪ ᴄᴜᴍᴀɴ ʙɪꜱᴀ ᴅɪ ᴘᴀᴋᴇ ᴅɪ ɢᴄ ᴀᴛᴀᴜ ᴅɪ ᴄʜ ᴍᴇᴋ!"
         )
 
     is_admin = False
@@ -42,11 +42,11 @@ async def mentionall(event):
         msg = await event.get_reply_message()
         if msg == None:
             return await event.respond(
-                "__I can't mention members for older messages! (messages which are sent before I'm added to group)__"
+                "__ɪ ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀs ғᴏʀ ᴏʟᴅᴇʀ ᴍᴇssᴀɢᴇs! (ᴍᴇssᴀɢᴇs ᴡʜɪᴄʜ ᴀʀᴇ sᴇɴᴛ ʙᴇғᴏʀᴇ ɪ'ᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʀᴏᴜᴘ__"
             )
     else:
         return await event.respond(
-            "__Reply to a message or give me some text to mention others!__"
+            "ʀᴇᴘʟʏ ᴘᴇꜱᴀɴ ᴍᴀɴᴀ ʏᴀɴɢ ᴍᴀᴜ ᴅɪ ᴛᴀɢᴀʟʟ ᴍᴇᴋ!"
         )
 
     spam_chats.append(chat_id)
@@ -56,10 +56,10 @@ async def mentionall(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}), "
+        usrtxt += f"❍ [{usr.first_name}](tg://user?id={usr.id})\n"
         if usrnum == 5:
             if mode == "text_on_cmd":
-                txt = f"{msg}\n{usrtxt}"
+                txt = f"{msg}\n\n{usrtxt}"
                 await client.send_message(chat_id, txt)
             elif mode == "text_on_reply":
                 await msg.reply(usrtxt)
@@ -75,7 +75,7 @@ async def mentionall(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
     if not event.chat_id in spam_chats:
-        return await event.respond("__There is no proccess on going...__")
+        return await event.respond("ɢᴀ ᴀᴅᴀ ʏᴀɴɢ ʜᴀʀᴜs ɢᴡ ʙᴇʀʜᴇɴᴛɪɪɴ ᴛᴏᴅ...__")
     is_admin = False
     try:
         partici_ = await client(GetParticipantRequest(event.chat_id, event.sender_id))
@@ -97,7 +97,7 @@ async def cancel_spam(event):
         return await event.respond("__Stopped mention.__")
 
 
-__mod_name__ = "Tᴀɢ Aʟʟ"
+__mod_name__ = "ᴛᴀɢ ᴀʟʟ"
 __help__ = """
 *Only for admins*
 
