@@ -72,7 +72,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 🥀
+*ʜᴇʏ* {}, 
 
 *๏ sᴀʏᴀ ᴀᴅᴀʟᴀʜ* {} !
 ➻ ʙᴏᴛ ᴍᴀɴᴀɢᴇ + ᴍᴜꜱɪᴄ.
@@ -104,10 +104,8 @@ buttons = [
 HELP_STRINGS = f"""
 *» {BOT_NAME} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
 
-➲ /start : ꜱᴛᴀʀᴛꜱ ᴍᴇ | ᴀᴄᴄᴏʀᴅɪɴɢ ᴛᴏ ᴍᴇ ʏᴏᴜ'ᴠᴇ ᴀʟʀᴇᴀᴅʏ ᴅᴏɴᴇ ɪᴛ.
-➲ /help  : ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ꜱᴇᴄᴛɪᴏɴ.
-  ‣ ɪɴ ᴘᴍ : ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ʜᴇʟᴘ ꜰᴏʀ ᴀʟʟ ꜱᴜᴘᴘᴏʀᴛᴇᴅ ᴍᴏᴅᴜʟᴇꜱ.
-  ‣ ɪɴ ɢʀᴏᴜᴘ : ᴡɪʟʟ ʀᴇᴅɪʀᴇᴄᴛ ʏᴏᴜ ᴛᴏ ᴘᴍ, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴀᴛ ʜᴇʟᴘ ᴍᴏᴅᴜʟᴇꜱ."""
+➲ /start : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴏʙʀᴏʟᴀɴ ʙᴏᴛ.
+➲ /help  : ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ᴛᴀʜᴜ ᴍᴏᴅᴜʟᴇ - ᴍᴏᴅᴜʟᴇ ʙᴏᴛ ɪɴɪ.
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -443,7 +441,41 @@ sɪʟᴀʜᴋᴀɴ ᴋᴀʟɪᴀɴ ᴊᴏɪɴ ɢʀᴜᴘ ᴅᴀɴ ᴄʜᴀɴɴ�
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◁", callback_data="source_back")]]
+                [
+                    [
+                        InlineKeyboardButton(
+                            text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs",
+                            url=f"https://t.me/+2o1vTH3XWv43OWU9",
+                        ),
+                        
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ"
+                            url=f"https://t.me/+ELpTEshSADM1ODc1",
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴍᴇᴅɪᴀ ᴠɪᴄɪᴅɪᴏʀ"
+                            url=f"https://t.me/+Gok7Kc6Q5SA5NTQ1",
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ"
+                            url=f"https://t.me/+E3M5iLoVahUyYjY1",
+                        ),
+                        InlineKeyboardButton(
+                            text="ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ"
+                            url=f"https://t.me/+-QStFZhEeUk0MDA1",
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="ᴋᴇᴍʙᴀʟɪ"
+                            callback_data="source_back"
+                        ),
+                    ],
+                ]
             ),
         )
     elif query.data == "source_back":
