@@ -89,14 +89,14 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(text=" ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"tg://user?id={OWNER_ID}"),
     ],
     [
         InlineKeyboardButton(text=" ᴛᴇɴᴛᴀɴɢ ", callback_data="fallen_"),
         InlineKeyboardButton(text=" sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text=" ᴅᴇᴠᴇʟᴏᴘᴇʀ ", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text=" ᴘᴇʀɪɴᴛᴀʜ ", callback_data="help_back"),
         InlineKeyboardButton(text=" ᴅᴏɴᴀᴛɪᴏɴ ", callback_data="source_"),
     ],
 ]
@@ -347,34 +347,33 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
     if query.data == "fallen_":
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-            text=f"*ʜᴇʏ,*\n  *sᴀʏᴀ ᴀᴅᴀʟᴀʜ {BOT_NAME}*"
-            "\n*ʙᴏᴛ ᴍᴀɴᴀɢᴇ + ᴍᴜꜱɪᴄ + ɢᴇɴᴇʀᴀᴛᴇᴅ ꜱᴛʀɪɴɢ.*"
-            "\n*ʙᴏᴛ ʙɪᴀꜱᴀ ᴀᴊᴀ ꜱᴀᴍᴀ ᴋʏᴋ ʏᴀɴɢ ʟᴀɪɴ.*"
+            text=f"*ʜᴀʏ,*\n  *sᴀʏᴀ ᴀᴅᴀʟᴀʜ {BOT_NAME}*"
+            "\n*ʙᴜᴀᴛ ᴋᴀʟɪᴀɴ ʏᴀɴɢ ʙᴇʀᴋᴇɴᴀɴ ᴜɴᴛᴜᴋ ᴅᴏɴᴀsɪ.*"
+            "\n*ᴋᴀʟɪᴀɴ ʙɪsᴀ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴘᴀʏᴍᴇɴᴛ ᴅɪʙᴀᴡᴀʜ ɪɴɪ.*"
             "\n\n────────────────────"
             f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
             f"\n*➻ ᴜsᴇʀs »* {sql.num_users()}"
             f"\n*➻ ᴄʜᴀᴛs »* {sql.num_chats()}"
             "\n────────────────────"
-            f"\n\n➻ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ɪɴꜰᴏ ᴛᴇɴᴛᴀɴɢ ᴘᴇɴɢɢᴜɴᴀᴀɴ ʙᴏᴛ {BOT_NAME}.",
+            f"\n\n➻ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ɪɴꜰᴏ ᴛᴇɴᴛᴀɴɢ ᴘᴀʏᴍᴇɴᴛ ᴅᴏɴᴀsɪ {BOT_NAME}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", callback_data="MusicCalvin"
+                            text="ᴅᴀɴᴀ", url=f""
                         ),
                         InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
+                            text="ovo", url=f""
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="ᴀʟᴀᴅɪɴ", url=f""
                         ),
                         InlineKeyboardButton(
-                            text="ᴅᴏɴᴀᴛɪᴏɴ",
-                            callback_data="source_",
+                            text="ǫʀɪs", url=f""
                         ),
                     ],
                     [
