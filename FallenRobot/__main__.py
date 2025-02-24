@@ -75,9 +75,9 @@ PM_START_TEXT = """
 *ʜᴇʏ* {}, 🥀
 
 *๏ sᴀʏᴀ ᴀᴅᴀʟᴀʜ* {} !
-➻ ʙᴏᴛ ᴍᴀɴᴀɢᴇ + ᴍᴜꜱɪᴄ + ɢᴇɴᴇʀᴀᴛᴇᴅ ꜱᴛʀɪɴɢ.
+➻ ʙᴏᴛ ᴍᴀɴᴀɢᴇ + ᴍᴜꜱɪᴄ.
 
-──────────────────
+───────────────
 *๏ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ɪɴꜰᴏ ᴛᴇɴᴛᴀɴɢ ᴘᴇɴɢɢᴜɴᴀᴀɴ ʙᴏᴛ.*
 """
 
@@ -92,12 +92,12 @@ buttons = [
         InlineKeyboardButton(text=" ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"tg://user?id={OWNER_ID}"),
     ],
     [
-        InlineKeyboardButton(text=" ᴛᴇɴᴛᴀɴɢ ", callback_data="fallen_"),
+        InlineKeyboardButton(text=" ᴅᴏɴᴀᴛɪᴏɴ ", callback_data="fallen_"),
         InlineKeyboardButton(text=" sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(text=" ᴘᴇʀɪɴᴛᴀʜ ", callback_data="help_back"),
-        InlineKeyboardButton(text=" ᴅᴏɴᴀᴛɪᴏɴ ", callback_data="source_"),
+        InlineKeyboardButton(text=" ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ ", callback_data="source_"),
     ],
 ]
 
@@ -215,7 +215,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+            caption="ᴄᴀʟᴠɪɴ ʜɪᴅᴜᴘ ʙᴀʙʏ !\n<b>ɢᴡ ʙᴇʟᴜᴍ ᴛɪᴅᴜʀ ᴅᴀʀɪ​:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -428,21 +428,17 @@ def Source_about_callback(update: Update, context: CallbackContext):
     if query.data == "source_":
         query.message.edit_text(
             text=f"""
-*ʜᴇʏ,
- ᴛʜɪs ɪs {BOT_NAME},
-ᴀɴ ᴏᴩᴇɴ sᴏᴜʀᴄᴇ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
+*ʜᴀʏ,
+ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ɢʀᴜᴘ ᴍɪʟɪᴋ ᴄᴀʟᴠɪɴ : *
+[sᴇᴄʀᴇᴛ ᴠɪʙᴇs](https://t.me/+2o1vTH3XWv43OWU9)
 
-ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ ᴛʜᴇ ʜᴇʟᴩ ᴏғ : [ᴛᴇʟᴇᴛʜᴏɴ](https://github.com/LonamiWebs/Telethon)
-[ᴩʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram)
-[ᴩʏᴛʜᴏɴ-ᴛᴇʟᴇɢʀᴀᴍ-ʙᴏᴛ](https://github.com/python-telegram-bot/python-telegram-bot)
-ᴀɴᴅ ᴜsɪɴɢ [sǫʟᴀʟᴄʜᴇᴍʏ](https://www.sqlalchemy.org) ᴀɴᴅ [ᴍᴏɴɢᴏ](https://cloud.mongodb.com) ᴀs ᴅᴀᴛᴀʙᴀsᴇ.
+ᴅᴀɴ ᴅɪʙᴀᴡᴀʜ ɪɴᴜ ᴀᴅᴀʟᴀʜ ᴄʜᴀɴɴᴇʟ ᴀsᴜᴘᴀɴ ᴍɪʟɪᴋ ᴄᴀʟᴠɪɴ :
+[ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ](https://t.me/+ELpTEshSADM1ODc1)
+[ᴍᴇᴅɪᴀ ᴠɪᴄɪᴅɪᴏʀ](https://t.me/+Gok7Kc6Q5SA5NTQ1)
+[ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ](https://t.me/+E3M5iLoVahUyYjY1)  
+[ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ](https://t.me/+-QStFZhEeUk0MDA1).
 
-
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/AnonymousX1025/FallenRobot)
-
-
-{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://github.com/AnonymousX1025/FallenRobot/blob/master/LICENSE).
-© 2022 - 2023 | [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_CHAT}), ᴀʟʟ ʀɪɢʜᴛs ʀᴇsᴇʀᴠᴇᴅ.
+sɪʟᴀʜᴋᴀɴ ᴋᴀʟɪᴀɴ ᴊᴏɪɴ ɢʀᴜᴘ ᴅᴀɴ ᴄʜᴀɴɴᴇʟ ᴍᴇᴅɪᴀ ᴀsᴜᴘᴀɴ ᴄᴀʟᴠɪɴ ᴅɪᴀᴛᴀs ᴅᴀɴ ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ ʀᴀᴍᴀɪᴋᴀɴ, ᴛᴇʀɪᴍᴀ ᴋᴀsɪʜ.
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
