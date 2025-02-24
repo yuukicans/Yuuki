@@ -428,7 +428,6 @@ def Source_about_callback(update: Update, context: CallbackContext):
             text=f"""
 *ʜᴀʏ,
 ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ɢʀᴜᴘ ᴍɪʟɪᴋ ᴄᴀʟᴠɪɴ : *
-[sᴇᴄʀᴇᴛ ᴠɪʙᴇs](https://t.me/+2o1vTH3XWv43OWU9)
 
 ᴅᴀɴ ᴅɪʙᴀᴡᴀʜ ɪɴᴜ ᴀᴅᴀʟᴀʜ ᴄʜᴀɴɴᴇʟ ᴀsᴜᴘᴀɴ ᴍɪʟɪᴋ ᴄᴀʟᴠɪɴ :
 [ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ](https://t.me/+ELpTEshSADM1ODc1)
