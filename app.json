@@ -28,7 +28,7 @@
       "API_HASH": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
-         "value": "26589716"
+         "value": "3a8354e0082c8c148a0608401e3a5a1a"
       },
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
