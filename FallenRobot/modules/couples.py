@@ -34,7 +34,7 @@ tomorrow = str(dt_tom())
 @pbot.on_message(filters.command(["couple", "couples"]))
 async def couple(_, message):
     if message.chat.type == ChatType.PRIVATE:
-        return await message.reply_text("This command only works in groups.")
+        return await message.reply_text("ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴅɪ ɢʀᴜᴘ.")
     try:
         chat_id = message.chat.id
         is_selected = await get_couple(chat_id, today)
@@ -76,9 +76,9 @@ __New couple of the day can be chosen at 12AM {tomorrow}__"""
 
 
 __help__ = """
-Choose couples in your chat
+ᴘɪʟɪʜ ᴘᴀsᴀɴɢᴀɴ ᴅᴀʟᴀᴍ ᴏʙʀᴏʟᴀɴ ᴀᴅɴᴀ
 
- ❍ /couple *:* Choose 2 users and send their name as couples in your chat.
+ ❍ /couple *:* ᴘɪʟɪʜ 𝟸 ᴘᴇɴɢɢᴜɴᴀ ᴅᴀɴ ᴋɪʀɪᴍᴋᴀɴ ɴᴀᴍᴀ sᴇʙᴀɢᴀɪ ᴘᴀsᴀɴɢᴀɴ ᴅᴀʟᴀᴍ ᴏʙʀᴏʟᴀɴ ᴀɴᴅᴀ.
 """
 
 __mod_name__ = "cᴏᴜᴘʟᴇ"
