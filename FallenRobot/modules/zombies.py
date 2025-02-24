@@ -17,7 +17,7 @@ async def ban_zombies(_, message: Message):
     except:
         clean = None
     if clean != "clean":
-        check = await message.reply_text("`Searching for deleted accounts...`")
+        check = await message.reply_text("`ʟᴀɢɪ ɢᴜᴇ ᴄᴀʀɪ ɴɪʜ ᴀᴋᴜɴ ᴋᴏɴᴛᴏʟ ʏᴀɴɢ ᴋᴇᴅᴇᴀᴋ...`")
         async for user in pbot.get_chat_members(message.chat.id):
             if user.user.is_deleted:
                 del_zom += 1
@@ -28,7 +28,7 @@ async def ban_zombies(_, message: Message):
             )
         else:
             return await check.edit_text(no_z)
-    cleaner = await message.reply_text("`Cleaning deleted accounts from this chat...`")
+    cleaner = await message.reply_text("`ɴɪʜ ᴋᴏɴᴛᴏʟ ᴀᴋᴜɴ ᴋᴇᴅᴇᴀᴋ...`")
     deleted_u = []
     banned = 0
     failed = 0
