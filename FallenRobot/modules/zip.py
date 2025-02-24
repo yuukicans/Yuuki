@@ -36,12 +36,12 @@ async def _(event):
         return
 
     if not event.is_reply:
-        await event.reply("Reply to a file to compress it.")
+        await event.reply("ᴍᴇᴍʙᴀʟᴀs ғɪʟᴇ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴏᴍᴘʀᴇs ɴʏᴀ.")
         return
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
             await event.reply(
-                "Hey, you are not admin. You can't use this command, But you can use in my PM 🙂"
+                "ʜᴇʏ, ᴀɴᴅᴀ ʙᴜᴋᴀɴ ᴀᴅᴍɪɴ, ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ, ᴛᴇᴛᴀᴘɪ ᴀɴᴅᴀ ᴅᴀᴘᴀᴛ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ɴʏᴀ ᴅɪ ᴄʜᴀᴛ sᴀʏᴀ 🙂"
             )
             return
 
@@ -116,12 +116,12 @@ async def _(event):
         return
 
     if not event.is_reply:
-        await event.reply("Reply to a zip file.")
+        await event.reply("ʙᴀʟᴀs ᴘᴇsᴀɴ ᴢɪᴘ ɴʏᴀ.")
         return
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
             await event.reply(
-                "Hey, You are not admin. You can't use this command, But you can use in my PM 🙂"
+                "ʜᴇʏ, ᴀɴᴅᴀ ʙᴜᴋᴀɴ ᴀᴅᴍɪɴ, ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ, ᴛᴇᴛᴀᴘɪ ᴀɴᴅᴀ ᴅᴀᴘᴀᴛ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ɴʏᴀ ᴅɪ ᴄʜᴀᴛ sᴀʏᴀ 🙂"
             )
             return
 
@@ -206,10 +206,10 @@ def get_lst_of_files(input_directory, output_lst):
 
 
 __help__ = """
-Hey I can convert files here.
+ʜᴀʏ sᴀʏᴀ ʙɪsᴀ ᴄᴏɴᴠᴇʀᴛ ғɪʟᴇs.
 
- ❍ /zip*:* reply to a telegram file to compress it in .zip format
- ❍ /unzip*:* reply to a telegram file to decompress it from the .zip format
+ ❍ /zip*:* ᴍᴇᴍʙᴀʟᴀs ғɪʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴏᴍᴘʀᴇs ɴʏᴀ ᴋᴇᴅᴀʟᴀᴍ ᴢɪᴘ
+ ❍ /unzip*:* ᴍᴇᴍʙᴀʟᴀs ғɪʟᴇ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴇᴋᴏᴍᴘʀᴇsɪɴʏᴀ ᴅᴀʀɪ ғᴏʀᴍᴀᴛ ᴢɪᴏ
 """
 
 __mod_name__ = "zɪᴘᴘᴇʀ"
