@@ -125,7 +125,8 @@ def unblacklist(update, context):
     msg = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
-    words = msg.text.split(None, 1)
+    reply_msg = msg.reply_to_message  # Ambil pesan yang di-reply
+
 
     conn = connected(context.bot, update, chat, user.id)
     if conn:
