@@ -440,44 +440,7 @@ sɪʟᴀʜᴋᴀɴ ᴋᴀʟɪᴀɴ ᴊᴏɪɴ ɢʀᴜᴘ ᴅᴀɴ ᴄʜᴀɴɴ�
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs",
-                            url=f"https://t.me/+2o1vTH3XWv43OWU9"
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴘᴇᴍɪʟɪᴋ"
-                            url=f"https://t.me/UcalMeVin"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ"
-                            url=f"https://t.me/+ELpTEshSADM1ODc1"
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴍᴇᴅɪᴀ ᴠɪᴄɪᴅɪᴏʀ"
-                            url=f"https://t.me/+Gok7Kc6Q5SA5NTQ1"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ"
-                            url=f"https://t.me/+E3M5iLoVahUyYjY1",
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ"
-                            url=f"https://t.me/+-QStFZhEeUk0MDA1",
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="ᴋᴇᴍʙᴀʟɪ"
-                            callback_data="source_back"
-                        ),
-                    ],
-                ]
+                [[InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="source_back")]]
             ),
         )
     elif query.data == "source_back":
@@ -739,10 +702,13 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
- {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+ㅤ🥀 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
 
 ┏•❅────✧❅✦❅✧────❅•┓
-ㅤ★ **ᴅᴇᴠᴇʟᴏᴘᴇʀ :** `ᴄᴀʟᴠɪɴ`
+ㅤ★ **ᴘʏᴛʜᴏɴ :** `{y()}`
+ㅤ★ **ʟɪʙʀᴀʀʏ :** `{telever}`
+ㅤ★ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
+ㅤ★ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
 ┗•❅────✧❅✦❅✧────❅•┛""",
                 parse_mode=ParseMode.MARKDOWN,
             )
