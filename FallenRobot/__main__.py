@@ -425,7 +425,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=f"""
+            text=f
 *ʜᴀʏ,
 ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ɢʀᴜᴘ ᴍɪʟɪᴋ ᴄᴀʟᴠɪɴ : *
 
@@ -436,7 +436,6 @@ def Source_about_callback(update: Update, context: CallbackContext):
 [ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ](https://t.me/+-QStFZhEeUk0MDA1).
 
 sɪʟᴀʜᴋᴀɴ ᴋᴀʟɪᴀɴ ᴊᴏɪɴ ɢʀᴜᴘ ᴅᴀɴ ᴄʜᴀɴɴᴇʟ ᴍᴇᴅɪᴀ ᴀsᴜᴘᴀɴ ᴄᴀʟᴠɪɴ ᴅɪᴀᴛᴀs ᴅᴀɴ ᴊᴀɴɢᴀɴ ʟᴜᴘᴀ ʀᴀᴍᴀɪᴋᴀɴ, ᴛᴇʀɪᴍᴀ ᴋᴀsɪʜ.
-""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
