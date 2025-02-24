@@ -736,8 +736,7 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-            {BOT_NAME} ᴜᴅᴀʜ ɪᴅᴜᴘ...
-            """,
+            {BOT_NAME} ᴜᴅᴀʜ ɪᴅᴜᴘ...""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
