@@ -45,8 +45,8 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ! 🖤\n"
-        "<b>ᴛɪᴍᴇ ᴛᴀᴋᴇɴ:</b> <code>{}</code>\n"
+        "ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇ ᴄᴀʟᴠɪɴ ɪᴅᴜᴘ ʙᴀʙʏ! 🖤\n"
+        "<b>ᴛɪᴍᴇ:</b> <code>{}</code>\n"
         "<b>ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
     )
@@ -55,6 +55,6 @@ def ping(update: Update, context: CallbackContext):
 PING_HANDLER = DisableAbleCommandHandler("ping", ping, run_async=True)
 dispatcher.add_handler(PING_HANDLER)
 
-__command_list__ = ["ping"]
+__command_list__ = ["ᴘɪɴɢ"]
 
 __handlers__ = [PING_HANDLER]
