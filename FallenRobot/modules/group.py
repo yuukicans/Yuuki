@@ -1,9 +1,9 @@
 __help__ = """
- ❍ /setgtitle <newtitle>*:* Sets new chat title in your group.
- ❍ /setgpic*:* As a reply to file or photo to set group profile pic!
- ❍ /delgpic*:* Same as above but to remove group profile pic.
- ❍ /setsticker*:* As a reply to some sticker to set it as group sticker set!
- ❍ /setdescription <description>*:* Sets new chat description in group.
+ ❍ /setgtitle <newtitle>*:* ᴍᴇɴɢᴀᴛᴜʀ ᴊᴜᴅᴜʟ ᴏʙʀᴏʟᴀɴ ʙᴀʀᴜ ᴅɪ ɢʀᴜᴘ ᴀɴᴅᴀ.
+ ❍ /setgpic*:* sᴇʙᴀɢᴀɪ ʙᴀʟᴀsᴀɴ ғɪʟᴇ ᴀᴛᴀᴜ ᴘᴏᴛᴏ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴛᴜʀ ᴘᴏᴛᴏ ᴘʀᴏғɪʟ ɢʀᴜᴘ!
+ ❍ /delgpic*:* sᴀᴍᴀ sᴇᴘᴇʀᴛɪ ᴅɪᴀᴛᴀs ᴛᴇᴛᴀᴘɪ ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜs ᴘᴏᴛᴏ ɢʀᴜᴘ.
+ ❍ /setsticker*:* sᴇʙᴀɢᴀɪ ʙᴀʟᴀsᴀɴ ᴋᴇ ʙᴇʙᴇʀᴀᴘᴀ sᴛɪᴄᴋᴇʀ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴛᴜʀɴʏᴀ sᴇʙᴀɢᴀɪ sᴛɪᴄᴋᴇʀ ɢʀᴜᴘ!
+ ❍ /setdescription <description>*:* ᴍᴇɴɢᴀᴛᴜʀ ᴅᴇsᴋʀɪᴘsɪ ᴏʙʀᴏʟᴀɴ ʙᴀʀᴜ ᴅɪ ɢʀᴜᴘ.
 """
 
 __mod_name__ = "ɢʀᴏᴜᴘ"
