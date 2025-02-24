@@ -47,7 +47,7 @@ def fallenrm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "{} ᴄʜᴀᴛʙᴏᴛ ᴅɪsᴀʙʟᴇᴅ ʙʏ {}.".format(
+                "{} ᴄʜᴀᴛʙᴏᴛ ɴᴏɴᴀᴋᴛɪᴘ ʙʏ {}.".format(
                     dispatcher.bot.first_name, mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -75,7 +75,7 @@ def fallenadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "{} ᴄʜᴀᴛʙᴏᴛ ᴇɴᴀʙʟᴇᴅ ʙʏ {}.".format(
+                "{} ᴄʜᴀᴛʙᴏᴛ ᴀᴋᴛɪᴘ ʙʏ {}.".format(
                     dispatcher.bot.first_name, mention_html(user.id, user.first_name)
                 ),
                 parse_mode=ParseMode.HTML,
@@ -88,12 +88,12 @@ def fallenadd(update: Update, context: CallbackContext) -> str:
 @gloggable
 def fallen(update: Update, context: CallbackContext):
     message = update.effective_message
-    msg = "• ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ᴛᴏ ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ ᴄʜᴀᴛʙᴏᴛ"
+    msg = "• ᴘɪʟɪʜ ᴏᴘsɪ ᴀᴋᴛɪᴘᴋᴀɴ / ɴᴏɴᴀᴋᴛɪᴘᴋᴀɴ ᴄʜᴀᴛʙᴏᴛ"
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="ᴇɴᴀʙʟᴇ", callback_data="add_chat({})"),
-                InlineKeyboardButton(text="ᴅɪsᴀʙʟᴇ", callback_data="rm_chat({})"),
+                InlineKeyboardButton(text="ᴀᴋᴛɪᴘᴋᴀɴ", callback_data="add_chat({})"),
+                InlineKeyboardButton(text="ɴᴏɴᴀᴋᴛɪᴘᴋᴀɴ", callback_data="rm_chat({})"),
             ],
         ]
     )
@@ -140,7 +140,7 @@ def chatbot(update: Update, context: CallbackContext):
 __help__ = f"""
 *{BOT_NAME} has an chatbot which provides you a seemingless chatting experience :*
 
- »  /chatbot *:* Shows chatbot control panel
+ »  /chatbot *:* ᴍᴇʟɪʜᴀᴛ ᴄʜᴀᴛʙᴏᴛ ᴘᴀɴᴇʟ
 """
 
 __mod_name__ = "cʜᴀᴛʙᴏᴛ"
