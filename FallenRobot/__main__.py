@@ -705,7 +705,7 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-ㅤ🥀 {BOT_NAME} Idup Ya...
+ㅤ🔥 {BOT_NAME} Idup Ya...
 """,
                 parse_mode=ParseMode.MARKDOWN,
             )
