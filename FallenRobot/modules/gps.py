@@ -32,9 +32,9 @@ async def _(event):
 
 
 __help__ = """
-Sends you the gps location of the given query...
+ᴍᴇɴɢɪʀɪᴍᴋᴀɴ ʟᴏᴋᴀsɪ ɢᴘs ᴅᴀʀɪ ᴋᴜᴇʀɪ ʏᴀɴɢ ᴅɪ ʙᴇʀɪᴋᴀɴ...
 
- ❍ /gps <location> *:* Get gps location.
+ ❍ /gps <location> *:* ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ʟᴏᴋsɪ ɢᴘs.
 """
 
 __mod_name__ = "ɢᴘs"
