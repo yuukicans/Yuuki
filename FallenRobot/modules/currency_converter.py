@@ -50,7 +50,7 @@ def convert(update: Update, context: CallbackContext):
         )
 
 
-__mod_name__ = "Cᴀsʜ"
+__mod_name__ = "ᴄᴀsʜ"
 
 __help__ = """
 Converts money from one exchange to another
