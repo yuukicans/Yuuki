@@ -15,7 +15,7 @@ async def msg(event):
     try:
         a = country.info()
     except:
-        await event.reply("Country Not Available Currently")
+        await event.reply("ɴᴇɢᴀʀᴀ ᴛɪᴅᴀᴋ ᴛᴇʀsᴇᴅɪᴀ sᴀᴀᴛ ɪɴɪ")
     name = a.get("name")
     bb = a.get("altSpellings")
     hu = ""
@@ -75,7 +75,7 @@ async def msg(event):
 
     wiki = a.get("wiki")
 
-    caption = f"""<b><u>Information Gathered Successfully</b></u>
+    caption = f"""<b><u>ɪɴғᴏʀᴍᴀsɪ ʙᴇʀʜᴀsɪʟ ᴅɪ ᴋᴜᴍᴘᴜʟᴋᴀɴ</b></u>
 
 <b>Country Name :</b> {name}
 <b>Alternative Spellings :</b> {hu}
@@ -97,7 +97,7 @@ async def msg(event):
 <b>Top Level Domain :</b> {lanester}
 <b>Wikipedia :</b> {wiki}
 
-<u>Information Gathered By {BOT_NAME}</u>
+<u>ɪɴғᴏʀᴍᴀsɪ ʏᴀɴɢ ᴅɪ ᴋᴜᴍᴘᴜʟᴋᴀɴ ᴏʟᴇʜ {BOT_NAME}</u>
 """
 
     await telethn.send_message(
@@ -109,9 +109,9 @@ async def msg(event):
 
 
 __help__ = """
-I will give information about a country
+sᴀʏᴀ ᴀᴋᴀɴ ᴍᴇᴍʙᴇʀɪᴋᴀɴ ɪɴғᴏʀᴍᴀsɪ ᴛᴇɴᴛᴀɴɢ sᴜᴀᴛᴜ ɴᴇɢᴀʀᴀ
 
- ❍ /country <country name>*:* Gathering info about given country
+ ❍ /country <country name>*:* ᴍᴇɴɢᴜᴍᴘᴜʟᴋᴀɴ ɪɴғᴏ ᴛᴇɴᴛᴀɴɢ ɴᴇɢᴀʀᴀ ʏᴀɴɢ ᴅɪ ʙᴇʀɪᴋᴀɴ
 """
 
 __mod_name__ = "cᴏᴜɴᴛʀʏ"
