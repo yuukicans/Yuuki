@@ -389,7 +389,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/+0eDP21kj7e44M2Rl"
+                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
                         ),
                     ],
                     [
@@ -399,11 +399,11 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/+0eDP21kj7e44M2Rl"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="Kembali", callback_data="fallen_"),
+                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
                     ],
                 ]
             ),
@@ -438,7 +438,7 @@ Dan Dibawah Ini Adalah Beberapa Channel Asupan 18+ Milik Calvin.
 
 Silahkan Join Grup Dan Channel Asupan Diatas Dan Jangan Lupa Ramaikan, terima kasih.
 
-[𝗣𝗘𝗠𝗜𝗟𝗜𝗞](https://t.me/UcalMeVin).
+[𝗖𝗔𝗟𝗩𝗜𝗡](https://t.me/UcalMeVin).
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -706,13 +706,7 @@ def main():
                 photo=START_IMG,
                 caption=f"""
 ㅤ🥀 {BOT_NAME} Idup Ya...
-
-┏•❅────✧❅✦❅✧────❅•┓
-ㅤ★ **ᴘʏᴛʜᴏɴ :** `{y()}`
-ㅤ★ **ʟɪʙʀᴀʀʏ :** `{telever}`
-ㅤ★ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
-ㅤ★ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
-┗•❅────✧❅✦❅✧────❅•┛""",
+""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
