@@ -444,18 +444,21 @@ sɪʟᴀʜᴋᴀɴ ᴋᴀʟɪᴀɴ ᴊᴏɪɴ ɢʀᴜᴘ ᴅᴀɴ ᴄʜᴀɴɴ�
                     [
                         InlineKeyboardButton(
                             text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs",
-                            url=f"https://t.me/+2o1vTH3XWv43OWU9",
+                            url=f"https://t.me/+2o1vTH3XWv43OWU9"
                         ),
-                        
+                        InlineKeyboardButton(
+                            text="ᴘᴇᴍɪʟɪᴋ"
+                            url=f"https://t.me/UcalMeVin"
+                        ),
                     ],
                     [
                         InlineKeyboardButton(
                             text="ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ"
-                            url=f"https://t.me/+ELpTEshSADM1ODc1",
+                            url=f"https://t.me/+ELpTEshSADM1ODc1"
                         ),
                         InlineKeyboardButton(
                             text="ᴍᴇᴅɪᴀ ᴠɪᴄɪᴅɪᴏʀ"
-                            url=f"https://t.me/+Gok7Kc6Q5SA5NTQ1",
+                            url=f"https://t.me/+Gok7Kc6Q5SA5NTQ1"
                         ),
                     ],
                     [
