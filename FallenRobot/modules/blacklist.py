@@ -192,7 +192,7 @@ def unblacklist(update, context):
     else:
         send_message(
             update.effective_message,
-            "Tell me which words you would like to remove from blacklist!",
+            "ʙᴇʀɪᴋᴀɴ ᴋᴀᴛᴀ ᴋᴀᴛᴀ ᴜɴᴛᴜᴋ ᴅɪ ʜᴀᴏᴜs ᴅᴀʀɪ ᴅᴀғᴛᴀʀ ʙʟᴀᴄᴋʟɪsᴛ!",
         )
 
 
@@ -445,20 +445,20 @@ def __stats__():
     )
 
 
-__mod_name__ = "Bʟᴀᴄᴋʟɪsᴛ"
+__mod_name__ = "ʙʟᴀᴄᴋʟɪsᴛ"
 
 __help__ = """
 
-Blacklists are used to stop certain triggers from being said in a group. Any time the trigger is mentioned, the message will immediately be deleted. A good combo is sometimes to pair this up with warn filters!
+ ʙʟᴀᴄᴋʟɪsᴛ ɪɴɪ ᴅɪ ʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍᴘᴇʀᴍᴜᴅᴀʜ ᴋᴀʟɪᴀɴ ᴅᴀʟᴀᴍ ᴍᴇᴍᴀɴᴀɢᴇ ɢʀᴜᴘ ᴅᴀʀɪ ɢᴄᴀsᴛᴀɴ!
 
-*NOTE*: Blacklists do not affect group admins.
+*NOTE*: ᴋᴀᴛᴀ ᴋᴀᴛᴀ ʏᴀɴɢ sᴜᴅᴀʜ ᴅɪ ʙʟᴀᴄᴋʟɪsᴛ ᴛɪᴅᴀᴋ ᴀᴋᴀɴ ʙᴇʀᴘᴇɴɢᴀʀᴜʜ ʙᴀɢɪ ᴀᴅᴍɪɴ ᴅɪ ɢʀᴜᴘ.
 
- ❍ /blacklist*:* View the current blacklisted words.
+ ❍ /blacklist*:* ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴅᴀғᴛᴀʀ ʙʟᴀᴄᴋʟɪsᴛ ᴅɪ ɢʀᴜᴘ.
 
 Admin only:
- ❍ /bl <triggers>*:* Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers.
- ❍ /unbl <triggers>*:* Remove triggers from the blacklist. Same newline logic applies here, so you can remove multiple triggers at once.
- ❍ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* Action to perform when someone sends blacklisted words.
+ ❍ /bl <triggers>*:* ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴋᴀᴛᴀ ᴋᴇᴅᴀʟᴀᴍ ᴅᴀғᴛᴀʀ ʙʟᴀᴄᴋʟɪsᴛ ɢᴄᴀsᴛ.
+ ❍ /unbl <triggers>*:* ᴜɴᴛᴜᴋ ᴍᴇɴɢʜᴀᴘᴜs ᴋᴀᴛᴀ ᴅᴀʀɪ ᴅᴀғᴛᴀʀ ʙʟᴀᴄᴋʟɪsᴛ ɢᴄᴀsғ.
+ ❍ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* ᴛɪɴᴅᴀᴋᴀɴ ʏᴀɴɢ ʜᴀʀᴜs ᴅɪʟᴀᴋᴜᴋᴀɴ sᴀᴀᴛ sᴇsᴇᴏʀᴀɴɢ ᴍᴇɴɢɪʀɪᴍ ᴋᴀᴛᴀ ᴋᴀᴛᴀ ʏᴀɴɢ ᴍᴀsᴜᴋ ᴋᴇ ᴅᴀғᴛᴀʀ ʙʟᴀᴄᴋʟɪsᴛ.
 """
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
