@@ -699,16 +699,15 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             dispatcher.bot.send_photo(
-                chat_id=f"@{SUPPORT_CHAT}",
+                chat_id=f"@infomusiccalvin",
                 photo=START_IMG,
-                caption=f"""
+                caption=f
 {BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
 
 ㅤ **ᴘʏᴛʜᴏɴ :** `{y()}`
 ㅤ **ʟɪʙʀᴀʀʏ :** `{telever}`
 ㅤ **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
-ㅤ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
-""",
+ㅤ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`,
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
