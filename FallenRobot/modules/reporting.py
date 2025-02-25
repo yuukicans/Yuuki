@@ -190,10 +190,10 @@ def report(update: Update, context: CallbackContext) -> str:
                 except Unauthorized:
                     pass
                 except BadRequest as excp:  # TODO: cleanup exceptions
-                    LOGGER.exception("Exception while reporting user")
+                    LOGGER.exception("Pengecualian saat melaporkan pengguna")
 
         message.reply_to_message.reply_text(
-            f"{mention_html(user.id, user.first_name)} reported the message to the admins.",
+            f"{mention_html(user.id, user.first_name)} melaporkan pesan tersebut ke admin.",
             parse_mode=ParseMode.HTML,
         )
         return msg
@@ -206,14 +206,14 @@ def __migrate__(old_chat_id, new_chat_id):
 
 
 def __chat_settings__(chat_id, _):
-    return f"This chat is setup to send user reports to admins, via /report and @admin: `{sql.chat_should_report(chat_id)}`"
+    return f"Obrolan ini disiapkan untuk mengirim laporan pengguna ke admin, melalui /report dan @admin: `{sql.chat_should_report(chat_id)}`"
 
 
 def __user_settings__(user_id):
     if sql.user_should_report(user_id) is True:
-        text = "You will receive reports from chats you're admin."
+        text = "Anda akan menerima laporan dari obrolan yang Anda admin."
     else:
-        text = "You will *not* receive reports from chats you're admin."
+        text = "Anda *not* akan menerima laporan dari obrolan yang Anda kelola."
     return text
 
 
@@ -225,10 +225,10 @@ def buttons(update: Update, context: CallbackContext):
         try:
             bot.kickChatMember(splitter[0], splitter[2])
             bot.unbanChatMember(splitter[0], splitter[2])
-            query.answer("✅ Succesfully kicked")
+            query.answer("✅ berhasil kick")
             return ""
         except Exception as err:
-            query.answer("🛑 Failed to Punch")
+            query.answer("🛑 Gagal Meninju")
             bot.sendMessage(
                 text=f"Error: {err}",
                 chat_id=query.message.chat_id,
@@ -237,7 +237,7 @@ def buttons(update: Update, context: CallbackContext):
     elif splitter[1] == "banned":
         try:
             bot.kickChatMember(splitter[0], splitter[2])
-            query.answer("✅  Succesfully Banned")
+            query.answer("✅  berhasil banned")
             return ""
         except Exception as err:
             bot.sendMessage(
@@ -245,11 +245,11 @@ def buttons(update: Update, context: CallbackContext):
                 chat_id=query.message.chat_id,
                 parse_mode=ParseMode.HTML,
             )
-            query.answer("🛑 Failed to Ban")
-    elif splitter[1] == "delete":
+            query.answer("🛑 gagal Ban")
+    elif splitter[1] == "hapus":
         try:
             bot.deleteMessage(splitter[0], splitter[3])
-            query.answer("✅ Message Deleted")
+            query.answer("✅ pesan dihapus")
             return ""
         except Exception as err:
             bot.sendMessage(
@@ -257,19 +257,19 @@ def buttons(update: Update, context: CallbackContext):
                 chat_id=query.message.chat_id,
                 parse_mode=ParseMode.HTML,
             )
-            query.answer("🛑 Failed to delete message!")
+            query.answer("🛑 gagal menghapus pesan!")
 
 
 __help__ = """
- ❍ /report <reason>*:* reply to a message to report it to admins.
- ❍ @admin*:* reply to a message to report it to admins.
+ ❍ /report <reason>*:* membalas pesan untuk melaporkannya ke admin.
+ ❍ @admin*:* membalas pesan untuk melaporkannya ke admin.
  
-*Note :* Neither of these will get triggered if used by admins.
+*Note :* Tidak satu pun dari ini akan dipicu jika digunakan oleh admin.
 
 *Admins only:*
- ❍ /reports <on/off>*:* change report setting, or view current status.
-   • If done in pm, toggles your status.
-   • If in group, toggles that groups's status.
+ ❍ /reports <on/off>*:* mengubah pengaturan laporan, atau melihat status terkini.
+   • Jika dilakukan dalam pm, mengubah status Anda.
+   • Jika dalam grup, mengubah status grup tersebut.
 """
 
 SETTING_HANDLER = CommandHandler("reports", report_setting, run_async=True)
