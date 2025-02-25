@@ -389,19 +389,8 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(
-                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/InfoMusicCalvin"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/+0eDP21kj7e44M2Rl"
-                        ),
+                        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/+0eDP21kj7e44M2Rl"),
+                        InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/InfoMusicCalvin"),
                     ],
                     [
                         InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
