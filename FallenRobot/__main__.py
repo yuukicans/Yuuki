@@ -428,7 +428,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
 *Hay,
  Saya Adalah {BOT_NAME},
 Berikut Ini Adalah Grup Secret Vibes Yang Di Miliki Oleh Calvin.*
-[𝗦𝗘𝗖𝗥𝗘𝗧 𝗩𝗜𝗕𝗘𝗦](https://github.com/LonamiWebs/Telethon)
+[𝗦𝗘𝗖𝗥𝗘𝗧 𝗩𝗜𝗕𝗘𝗦](https://t.me/+2o1vTH3XWv43OWU9)
 
 
 Dan Dibawah Ini Adalah Beberapa Channel Asupan 18+ Milik Calvin.
