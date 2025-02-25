@@ -483,12 +483,12 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_text(
-            "» ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʜᴇʟᴩ.",
+            "» ᴘɪʟɪʜ ᴏᴘsɪ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛ ʙᴀɴᴛᴜᴀɴ.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
+                            text="ʙᴜᴋᴀ ᴅɪ ᴘᴇsᴀɴ",
                             url="https://t.me/{}?start=help".format(
                                 context.bot.username
                             ),
@@ -496,7 +496,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
+                            text="ʙᴜᴋᴀ ᴅɪsɪɴɪ",
                             callback_data="help_back",
                         )
                     ],
@@ -517,7 +517,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◁", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="help_back")]]
             ),
         )
 
@@ -589,7 +589,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="◁",
+                                text="",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -674,7 +674,7 @@ def get_settings(update: Update, context: CallbackContext):
                 ),
             )
         else:
-            text = "Click here to check your settings."
+            text = "ᴋʟɪᴋ ᴅɪsɪɴɪ ᴜɴᴛᴜᴋ ᴄᴇᴋ sᴇᴛᴛɪɴɢᴀɴ ᴍᴜ."
 
     else:
         send_settings(chat.id, user.id, True)
