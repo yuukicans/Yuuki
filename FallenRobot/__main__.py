@@ -361,18 +361,18 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Dana", url=f"https://t.me/c/2370707150/15"
+                            text="Dana", url=f"https://t.me/InfoMusicCalvin/397"
                         ),
                         InlineKeyboardButton(
-                            text="Ovo", url=f"https://t.me/c/2370707150/16"
+                            text="Ovo", url=f"https://t.me/InfoMusicCalvin/398"
                         ),              
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Aladin", url=f"https://t.me/c/2370707150/17"
+                            text="Aladin", url=f"https://t.me/InfoMusicCalvin/399"
                         ),
                         InlineKeyboardButton(
-                            text="Qris", url=f"https://t.me/c/2370707150/18",
+                            text="Qris", url=f"https://t.me/InfoMusicCalvin/400",
                         ),
                     ],
                     [
@@ -420,7 +420,7 @@ Berikut Ini Adalah Grup Secret Vibes Yang Di Miliki Oleh Calvin.*
 
 
 Dan Dibawah Ini Adalah Beberapa Channel Asupan 18+ Milik Calvin.
-[𝗠𝗘𝗗𝗜𝗔 𝗜𝗟𝗠𝗜𝗘](https://t.me/+ELpTEshSADM1ODc1)
+[𝗠𝗘𝗗𝗜𝗔 𝗜𝗟𝗠𝗜𝗘](https://t.me/+ISzPvC9h6B85ZDU1)
 [𝗠𝗘𝗗𝗜𝗔 𝗩𝗜𝗖𝗜𝗗𝗜𝗢𝗥](https://t.me/+Gok7Kc6Q5SA5NTQ1)
 [𝗠𝗘𝗗𝗜𝗔 𝗔𝗡𝗚𝗘𝗟](https://t.me/+E3M5iLoVahUyYjY1) 
 [𝗠𝗘𝗗𝗜𝗔 𝗖𝗔𝗥𝗠𝗜𝗟𝗔](https://t.me/+-QStFZhEeUk0MDA1).
