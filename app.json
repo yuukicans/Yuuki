@@ -51,7 +51,7 @@
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001668152281"
+         "value": "-1002458447761"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
