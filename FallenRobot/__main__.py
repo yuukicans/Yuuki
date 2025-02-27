@@ -440,8 +440,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "source_back":
         query.message.edit_text(
-            text=f""*
-๏ Dibawah Ini Adalah Beberapa Module Perintah Untuk Memulai Musik / Video.*"
+            text=f""* Dibawah Ini Adalah Beberapa Module Perintah Untuk Memulai Musik / Video.*"
 f"\n\n/play ᴏʀ /vplay : Pemutar musik ini akan memutar lagu-lagu dari album ini.",
 f"\n\n/playforce atau /vplayforce : Pemain dapat memainkan semua jenis permainan di perangkat seluler mereka.",
 f"\n\n/cplay : untuk memutar lagu di channel yang terhubung, /cvplay : untuk memutar video clip di channel yang terhubung.", 
