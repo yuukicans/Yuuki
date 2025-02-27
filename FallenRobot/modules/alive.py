@@ -9,8 +9,8 @@ from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHA
 
 @pbot.on_message(filters.command("alive"))
 async def awake(_, message: Message):
-    TEXT = f"**ʜᴇʏ🔥 {message.from_user.mention},\n\nsᴀʏᴀ {BOT_NAME}**\n━━━━━━━━━━━━━\n\n"
-    TEXT += f"» **ᴅᴇᴠᴇʟᴏᴘᴇʀ :** [ᴄᴀʟᴠɪɴ](tg://user?id={OWNER_ID})\n\n"
+    TEXT = f"ʜᴀʟʟᴏ🔥 {message.from_user.mention},\n\nsᴀʏᴀ {BOT_NAME}\n━━━━━━━━━━━━━\n\n"ʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪᴘᴇʀɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴇɴɢᴀɴ sʏᴀʀᴀᴛ, ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.
+    TEXT += f"» ᴅᴇᴠᴇʟᴏᴘᴇʀ : [ᴄᴀʟᴠɪɴ](tg://user?id={OWNER_ID})\n━━━━━━━━━━━━━\n\nsɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ɢʀᴏᴜᴘ ᴅᴀɴ sᴜᴘᴘᴏʀᴛ ᴋᴀᴍɪ ᴜɴᴛᴜᴋ ɪᴊɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ."
     BUTTON = [
         [
             InlineKeyboardButton("ɢʀᴜᴘ", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
