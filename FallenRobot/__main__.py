@@ -383,7 +383,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "fallen_support":
         query.message.edit_text(
-            text="*๏ Dibawah Ini Merupakan Grup Dan Channel asupan.*"
+            text="* Dibawah Ini Merupakan Grup Dan Channel asupan.*"
             f"\n\nSilahkan Kalian Join Untuk Melihat Beberapa video video terviral.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
