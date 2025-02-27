@@ -93,11 +93,11 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="ᴅᴏɴᴀᴛɪᴏɴ", callback_data="fallen_"),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", callback_data="fallen_support"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/InfoMusicCalvin"),
     ],
     [
         InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ", callback_data="help_back"),
-        InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ", callback_data="source_"),
+        InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ", callback_data="fallen_support"),
     ],
 ]
 
@@ -383,13 +383,25 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "fallen_support":
         query.message.edit_text(
-            text="*๏ Dibawah Ini Merupakan Grup Support Dan Channel Support Bot Music Dan Manage Group Calvin.*"
-            f"\n\nSilahkan Kalian Join Untuk Mengetahui Beberapa Update Dari Bot {BOT_NAME} Atau Ingin Tau Tentang Bot {BOT_NAME}.",
+            text="*๏ Dibawah Ini Merupakan Grup Dan Channel asupan.*"
+            f"\n\nSilahkan Kalian Join Untuk Melihat Beberapa video video terviral.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/InfoMusicCalvin"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴋɪᴛᴀ", url=f"https://t.me/+aGkWMnnHIYg2ZGRl"),
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ʙᴇʀsᴀᴍᴀ", url=f"https://t.me/+OEnSdLipGJdkZGU1"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ", url=f"https://t.me/+ISzPvC9h6B85ZDU1"),
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ", url=f"https://t.me/+E3M5iLoVahUyYjY1"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴠɪᴄɪᴅɪᴏʀ", url=f"https://t.me/+Gok7Kc6Q5SA5NTQ1"),
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ", url=f"https://t.me/+-QStFZhEeUk0MDA1"),
                     ],
                     [
                         InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
