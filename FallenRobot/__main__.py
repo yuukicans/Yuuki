@@ -96,13 +96,13 @@ buttons = [
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/InfoMusicCalvin"),
     ],
     [
-        InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ", callback_data="source_back"),
         InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ", callback_data="fallen_support"),
     ],
 ]
 
 HELP_STRINGS = f"""
-*» {BOT_NAME} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
+*» {BOT_NAME} ᴍᴀɴᴀɢᴇ ɢʀᴜᴘ ғɪᴛᴜʀ*
 
 ➲ /start : Untuk Memulai Obrolan Dengan Bot.
 ➲ /help  : Untuk Melihat Perintah Dan Bantuan."""
@@ -389,7 +389,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/InfoMusicCalvin"),
+                        InlineKeyboardButton(text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
                     ],
                     [
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴋɪᴛᴀ", url=f"https://t.me/+aGkWMnnHIYg2ZGRl"),
@@ -424,39 +424,31 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=f"""
-*Hay,
- Saya Adalah {BOT_NAME},
-Berikut Ini Adalah Grup Secret Vibes Yang Di Miliki Oleh Calvin.*
-[𝗦𝗘𝗖𝗥𝗘𝗧 𝗩𝗜𝗕𝗘𝗦](https://t.me/+2o1vTH3XWv43OWU9)
-
-
-Dan Dibawah Ini Adalah Beberapa Channel Asupan 18+ Milik Calvin.
-[𝗠𝗘𝗗𝗜𝗔 𝗜𝗟𝗠𝗜𝗘](https://t.me/+ISzPvC9h6B85ZDU1)
-[𝗠𝗘𝗗𝗜𝗔 𝗩𝗜𝗖𝗜𝗗𝗜𝗢𝗥](https://t.me/+Gok7Kc6Q5SA5NTQ1)
-[𝗠𝗘𝗗𝗜𝗔 𝗔𝗡𝗚𝗘𝗟](https://t.me/+E3M5iLoVahUyYjY1) 
-[𝗠𝗘𝗗𝗜𝗔 𝗖𝗔𝗥𝗠𝗜𝗟𝗔](https://t.me/+-QStFZhEeUk0MDA1).
-
-Silahkan Join Grup Dan Channel Asupan Diatas Dan Jangan Lupa Ramaikan, terima kasih.
-
-[𝗖𝗔𝗟𝗩𝗜𝗡](https://t.me/UcalMeVin).
-""",
+            text=f""" Dibawah Ini adalah beberapa module / perintah bot music + manage calvin management.""",
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Kembali", callback_data="source_back")]]
+                [
+                    [
+                        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="source_back"),
+                        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
+                    ],
+                    [
+                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back")
+                    ],
+                ]
             ),
         )
     elif query.data == "source_back":
-        first_name = update.effective_user.first_name
         query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
-            reply_markup=InlineKeyboardMarkup(buttons),
+            text=f""*
+๏ Dibawah Ini Adalah Beberapa Module Perintah Untuk Memulai Musik / Video.*"
+f"\n\n/play ᴏʀ /vplay : Pemutar musik ini akan memutar lagu-lagu dari album ini.",
+f"\n\n/playforce atau /vplayforce : Pemain dapat memainkan semua jenis permainan di perangkat seluler mereka.",
+f"\n\n/cplay : untuk memutar lagu di channel yang terhubung, /cvplay : untuk memutar video clip di channel yang terhubung.", 
+            
             parse_mode=ParseMode.MARKDOWN,
-            timeout=60,
-            disable_web_page_preview=True,
-        )
-
+            reply_markup=InlineKeyboardMarkup(
+               [[InlineKeyboardButton(text="Kembali", callback_data="fallen_back")]]
 
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
@@ -464,7 +456,7 @@ def get_help(update: Update, context: CallbackContext):
 
     # ONLY send help in PM
     if chat.type != chat.PRIVATE:
-        if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
+        if len(args) >=2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_text(
                 f"Contact me in PM to get help of {module.capitalize()}",
