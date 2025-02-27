@@ -449,7 +449,7 @@ f"\n\n/cplay : untuk memutar lagu di channel yang terhubung, /cvplay : untuk mem
             reply_markup=InlineKeyboardMarkup(
                [
                    [
-                       InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
+                       InlineKeyboardButton(text="Kembali", callback_data="source_"),
                    ],
                ]
             ),
@@ -702,7 +702,7 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-ㅤ🔥 {BOT_NAME} Idup Ya...
+ㅤ🔥 {BOT_NAME} ᴀᴄᴛɪᴠᴇ ᴅᴀɴ sɪᴀᴘ ᴘᴀᴋᴀɪ...
 """,
                 parse_mode=ParseMode.MARKDOWN,
             )
