@@ -96,7 +96,7 @@ buttons = [
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/InfoMusicCalvin"),
     ],
     [
-        InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ", callback_data="source_back"),
+        InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ", callback_data="source_"),
         InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ", callback_data="fallen_support"),
     ],
 ]
