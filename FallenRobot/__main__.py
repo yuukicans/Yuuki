@@ -72,19 +72,19 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*ʜᴇʏ* {}, 
+*ʜᴀʟʟᴏ* {}, 
 
-*๏ Saya Adalah* {} !
-➻ Bot Music Dan Management Untuk Mengontrol Grup Anda.
+*๏ sᴀʏᴀ ᴀᴅᴀʟᴀʜ* {} !
+➻ ʙᴏᴛ ᴍᴜsɪᴄ ᴅᴀɴ ᴍᴀɴᴀɢᴇ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴏɴᴛʀᴏʟ ɢʀᴏᴜᴘ ᴀɴᴅᴀ.
 
 ──────────────────
-*๏ Klik Tombol Dibawah Untuk Mengetahui Perintah Bot Ini.*
+*๏ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴘᴇʀɪɴᴛᴀʜ ᴅᴀɴ ᴍᴏᴅᴜʟ ʙᴏᴛ ɪɴɪ.*
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Tambahkan Ke Grup",
+            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴜᴘ",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -104,8 +104,8 @@ buttons = [
 HELP_STRINGS = f"""
 *» {BOT_NAME} ᴍᴀɴᴀɢᴇ ɢʀᴜᴘ ғɪᴛᴜʀ*
 
-➲ /start : Untuk Memulai Obrolan Dengan Bot.
-➲ /help  : Untuk Melihat Perintah Dan Bantuan."""
+➲ /start : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴏʙʀᴏʟᴀɴ ᴅᴇɴɢᴀɴ ʙᴏᴛ.
+➲ /help  : ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ɪɴɪ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -302,7 +302,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Kembali", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="help_back")]]
                 ),
             )
 
@@ -346,45 +346,45 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
     if query.data == "fallen_":
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
-            text=f"*Hay,*\n  *Saya Adalah {BOT_NAME}*"
-            "\n*Robot Music Sama Aja Kaya Yang Lain.*"
-            "\n*Silahkan Berdonasi Agar Bot Ini Bisa Berjalan Dan Berkembang.*"
+            text=f"*ʜᴀʟʟᴏ,*\n  *sᴀʏᴀ ᴀᴅᴀʟᴀʜ {BOT_NAME}*"
+            "\n*ʙᴏᴛ ᴍᴜsɪᴄ ᴅᴀɴ ᴍᴀɴᴀɢᴇ sᴀᴍᴀ ᴀᴊᴀ ᴋᴀʏᴀ ʏᴀɴɢ ʟᴀɪɴ.*"
+            "\n*sɪʟᴀʜᴋᴀɴ ʙᴇʀᴅᴏɴᴀsɪ ᴀɢᴀʀ ʙᴏᴛ ɪɴɪ ʙɪsᴀ ʙᴇʀᴊᴀʟᴀɴ ᴅᴀɴ ʙᴇʀᴋᴇᴍʙᴀɴɢ.*"
             "\n\n────────────────────"
             f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
             f"\n*➻ ᴜsᴇʀs »* {sql.num_users()}"
             f"\n*➻ ᴄʜᴀᴛs »* {sql.num_chats()}"
             "\n────────────────────"
-            f"\n\n➻ Klik Tombol Dibawah Ini Untuk Berdonasi {BOT_NAME}.",
+            f"\n\n➻ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ʙᴇʀᴅᴏɴᴀsɪ {BOT_NAME}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Dana", url=f"https://t.me/InfoMusicCalvin/397"
+                            text="ᴅᴀɴᴀ", url=f"https://t.me/InfoMusicCalvin/397"
                         ),
                         InlineKeyboardButton(
-                            text="Ovo", url=f"https://t.me/InfoMusicCalvin/398"
+                            text="ᴏᴠᴏ", url=f"https://t.me/InfoMusicCalvin/398"
                         ),              
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Aladin", url=f"https://t.me/InfoMusicCalvin/399"
+                            text="ᴀʟᴀᴅɪɴ", url=f"https://t.me/InfoMusicCalvin/399"
                         ),
                         InlineKeyboardButton(
-                            text="Qris", url=f"https://t.me/InfoMusicCalvin/400",
+                            text="ǫʀɪs", url=f"https://t.me/InfoMusicCalvin/400",
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
+                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
                     ],
                 ]
             ),
         )
     elif query.data == "fallen_support":
         query.message.edit_text(
-            text="* Dibawah Ini Merupakan Grup Dan Channel asupan.*"
-            f"\n\nSilahkan Kalian Join Untuk Melihat Beberapa video video terviral.",
+            text="* ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴍᴇʀᴜᴘᴀᴋᴀɴ ɢʀᴏᴜᴘ ᴅᴀɴ ᴄʜᴀɴɴᴇʟ ᴀsᴜᴘᴀɴ.*"
+            f"\n\nsɪʟᴀʜᴋᴀɴ ᴋᴀʟɪᴀɴ ᴊᴏɪɴ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴇʙᴇʀᴀᴘᴀ ᴠɪᴅᴇᴏ ᴠɪᴅᴇᴏ ᴛᴇʀᴠɪʀᴀʟ.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -393,6 +393,8 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴋɪᴛᴀ", url=f"https://t.me/+aGkWMnnHIYg2ZGRl"),
+                    ],
+                    [
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ʙᴇʀsᴀᴍᴀ", url=f"https://t.me/+OEnSdLipGJdkZGU1"),
                     ],
                     [
@@ -404,7 +406,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ", url=f"https://t.me/+-QStFZhEeUk0MDA1"),
                     ],
                     [
-                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
+                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
                     ],
                 ]
             ),
@@ -424,7 +426,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=f""" Dibawah Ini adalah beberapa module / perintah bot music + manage calvin management.""",
+            text=f""" ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ / ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ + ᴍᴀɴᴀɢᴇ ᴄᴀʟᴠɪɴ.""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -433,23 +435,23 @@ def Source_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
                     ],
                     [
-                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back")
+                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back")
                     ],
                 ]
             ),
         )
     elif query.data == "source_back":
         query.message.edit_text(
-            text=f" Dibawah Ini Adalah Beberapa Module Perintah Untuk Memulai Musik / Video."
-f"\n\n/play ᴏʀ /vplay : Pemutar musik ini akan memutar lagu-lagu dari album ini."
-f"\n\n/playforce atau /vplayforce : Pemain dapat memainkan semua jenis permainan di perangkat seluler mereka."
-f"\n\n/cplay : untuk memutar lagu di channel yang terhubung, /cvplay : untuk memutar video clip di channel yang terhubung.", 
+            text=f" ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ ᴘᴇʀɪɴᴛᴀʜ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴍᴜsɪᴄ / ᴠɪᴅᴇᴏ."
+f"\n\n/play ᴏʀ /vplay : ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀɢᴜɴᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ɢʀᴏᴜᴘ / ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ."
+f"\n\n/playforce ᴀᴛᴀᴜ /vplayforce : ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀғᴜɴɢsɪ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ʟᴀɢᴜ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ᴘᴇʀᴀɴɢᴋᴀᴛ ᴀɴᴅᴀ."
+f"\n\n/cplay : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢɪ ᴅɪ ᴄʜᴀɴɴᴇʟ ʏᴀɴɢ ᴛᴇʀʜᴜʙᴜɴɢ, /cvplay : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ᴠɪᴅᴇᴏ ᴅɪᴄʜᴀɴɴᴇʟ ʏᴀɴɢ ᴛᴇʀʜᴜʙᴜɴɢ.", 
             
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                [
                    [
-                       InlineKeyboardButton(text="Kembali", callback_data="source_"),
+                       InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="source_"),
                    ],
                ]
             ),
