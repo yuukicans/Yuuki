@@ -181,7 +181,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Kembali", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="help_back")]]
                     ),
                 )
 
@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="Calvin Robot Idup !\n<b>Gua Ga Tidur Dari​:</b> <code>{}</code>".format(
+            caption="ᴄᴀʟᴠɪɴ ʙᴏᴛ ᴀʟɪᴠᴇ🔥 !\n<b>ɢᴜᴀ ʙᴇʟᴜᴍ ᴛɪᴅᴜʀ ᴅᴀʀɪ​:</b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -465,7 +465,7 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >=2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
+                f"ᴄʜᴀᴛ ᴘʀɪʙᴀᴅɪ sᴀʏᴀ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴀɴᴛᴜᴀɴ {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -747,7 +747,7 @@ def main():
 
     dispatcher.add_error_handler(error_callback)
 
-    LOGGER.info("Using long polling.")
+    LOGGER.info("ʙᴇʀʜᴀsɪʟ ᴅᴇᴘʟᴏʏ ʙᴏᴛ ᴀɴᴅᴀ .")
     updater.start_polling(timeout=15, read_latency=4, drop_pending_updates=True)
 
     if len(argv) not in (1, 3, 4):
@@ -759,7 +759,7 @@ def main():
 
 
 if __name__ == "__main__":
-    LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
+    LOGGER.info("ʙᴇʀʜᴀsɪʟ ᴍᴇɴɢᴜɴᴅᴜʜ ᴍᴏᴅᴜʟᴇ: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     pbot.start()
     main()
