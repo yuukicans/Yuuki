@@ -447,8 +447,13 @@ f"\n\n/cplay : untuk memutar lagu di channel yang terhubung, /cvplay : untuk mem
             
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-               [[InlineKeyboardButton(text="Kembali", callback_data="fallen_back")]]
-
+               [
+                   [
+                       InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
+                   ],
+               ]
+            ),
+        )
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
     args = update.effective_message.text.split(None, 1)
