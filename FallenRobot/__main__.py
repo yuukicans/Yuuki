@@ -84,7 +84,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴜᴘ",
+            text="+ add me +",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
@@ -361,7 +361,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴀɴᴀ", url=f"https://t.me/InfoMusicCalvin/397"
+                            text="ᴅᴀɴᴀ", callback_data="basic_help"
                         ),
                         InlineKeyboardButton(
                             text="ᴏᴠᴏ", url=f"https://t.me/InfoMusicCalvin/398"
@@ -390,12 +390,6 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴋɪᴛᴀ", url=f"https://t.me/+aGkWMnnHIYg2ZGRl"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ʙᴇʀsᴀᴍᴀ", url=f"https://t.me/+OEnSdLipGJdkZGU1"),
                     ],
                     [
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ", url=f"https://t.me/+ISzPvC9h6B85ZDU1"),
@@ -454,6 +448,22 @@ f"\n\n/cplay : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢɪ ᴅɪ ᴄʜᴀɴɴ�
                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="source_"),
                    ],
                ]
+            ),
+        )
+def FallenRobot_about_callback(update: Update, context: CallbackContext):
+    query = update.callback_query
+    if query.data == "basic_help":
+        query.message.edit_text(
+            text=f"➻ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ғᴏʀᴍᴀᴛ ᴅᴏɴᴀsɪ ᴇ ᴡᴀʟʟᴇᴛ ᴅᴀɴᴀ."
+            "\n\n➻ ɴᴏᴍᴏʀ ᴅᴀɴᴀ : 085811762240"
+            "\n\n➻ ᴀᴛᴀs ɴᴀᴍᴀ : Tomi Irwansyah",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_")
+                    ],
+                ]
             ),
         )
 def get_help(update: Update, context: CallbackContext):
