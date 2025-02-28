@@ -76,8 +76,10 @@ PM_START_TEXT = """
 
 *๏ sᴀʏᴀ ᴀᴅᴀʟᴀʜ* {} !
 ➻ ʙᴏᴛ ᴍᴜsɪᴄ ᴅᴀɴ ᴍᴀɴᴀɢᴇ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴏɴᴛʀᴏʟ ɢʀᴏᴜᴘ ᴀɴᴅᴀ.
-
-──────────────────
+───────────────────
+➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
+➻ ᴜsᴇʀs »* {sql.num_users()}"
+───────────────────
 *๏ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴘᴇʀɪɴᴛᴀʜ ᴅᴀɴ ᴍᴏᴅᴜʟ ʙᴏᴛ ɪɴɪ.*
 """
 
@@ -85,8 +87,7 @@ buttons = [
     [
         InlineKeyboardButton(
             text="+ add me +",
-            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-        ),
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",),
     ],
     [
         InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"tg://user?id={OWNER_ID}"),
@@ -349,11 +350,6 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             text=f"*ʜᴀʟʟᴏ,*\n  *sᴀʏᴀ ᴀᴅᴀʟᴀʜ {BOT_NAME}*"
             "\n*ʙᴏᴛ ᴍᴜsɪᴄ ᴅᴀɴ ᴍᴀɴᴀɢᴇ sᴀᴍᴀ ᴀᴊᴀ ᴋᴀʏᴀ ʏᴀɴɢ ʟᴀɪɴ.*"
             "\n*sɪʟᴀʜᴋᴀɴ ʙᴇʀᴅᴏɴᴀsɪ ᴀɢᴀʀ ʙᴏᴛ ɪɴɪ ʙɪsᴀ ʙᴇʀᴊᴀʟᴀɴ ᴅᴀɴ ʙᴇʀᴋᴇᴍʙᴀɴɢ.*"
-            "\n\n────────────────────"
-            f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
-            f"\n*➻ ᴜsᴇʀs »* {sql.num_users()}"
-            f"\n*➻ ᴄʜᴀᴛs »* {sql.num_chats()}"
-            "\n────────────────────"
             f"\n\n➻ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ʙᴇʀᴅᴏɴᴀsɪ {BOT_NAME}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -391,7 +387,6 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ", url=f"https://t.me/+9rg8DENaRZw5ODBl"),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴠɪᴄɪᴅɪᴏʀ", url=f"https://t.me/+Gok7Kc6Q5SA5NTQ1"),
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ", url=f"https://t.me/+Bohnh-t-Nbo3NWI1"),
                     ],
                     [
