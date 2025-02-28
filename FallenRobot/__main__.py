@@ -361,7 +361,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴀɴᴀ", callback_data="basic_help"
+                            text="ᴅᴀɴᴀ", url=f"https://t.me/InfoMusicCalvin/397"
                         ),
                         InlineKeyboardButton(
                             text="ᴏᴠᴏ", url=f"https://t.me/InfoMusicCalvin/398"
@@ -448,22 +448,6 @@ f"\n\n/cplay : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢɪ ᴅɪ ᴄʜᴀɴɴ�
                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="source_"),
                    ],
                ]
-            ),
-        )
-def FallenRobot_about_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    if query.data == "basic_help":
-        query.message.edit_text(
-            text=f"➻ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ғᴏʀᴍᴀᴛ ᴅᴏɴᴀsɪ ᴇ ᴡᴀʟʟᴇᴛ ᴅᴀɴᴀ."
-            "\n\n➻ ɴᴏᴍᴏʀ ᴅᴀɴᴀ : 085811762240"
-            "\n\n➻ ᴀᴛᴀs ɴᴀᴍᴀ : Tomi Irwansyah",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_")
-                    ],
-                ]
             ),
         )
 def get_help(update: Update, context: CallbackContext):
