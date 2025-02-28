@@ -361,19 +361,14 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
+                            text="ǫʀɪs", url=f"https://t.me/InfoMusicCalvin/400",
+                        ),
+                        InlineKeyboardButton(
                             text="ᴅᴀɴᴀ", url=f"https://t.me/InfoMusicCalvin/397"
                         ),
                         InlineKeyboardButton(
                             text="ᴏᴠᴏ", url=f"https://t.me/InfoMusicCalvin/398"
                         ),              
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="ᴀʟᴀᴅɪɴ", url=f"https://t.me/InfoMusicCalvin/399"
-                        ),
-                        InlineKeyboardButton(
-                            text="ǫʀɪs", url=f"https://t.me/InfoMusicCalvin/400",
-                        ),
                     ],
                     [
                         InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
