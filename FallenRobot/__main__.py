@@ -705,10 +705,16 @@ def main():
                 photo=START_IMG,
                 caption=f"""
 ㅤ🔥 {BOT_NAME} ᴀᴄᴛɪᴠᴇ ᴅᴀɴ sɪᴀᴘ ᴘᴀᴋᴀɪ...
-» sᴀʏᴀ {BOT_NAME}\n━━━━━━━━━━━━━\nʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪᴘᴇʀɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴇɴɢᴀɴ sʏᴀʀᴀᴛ, ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━\n\n"
+» sᴀʏᴀ {BOT_NAME}\n━━━━━━━━━━━━━\nʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪᴘᴇʀɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴇɴɢᴀɴ sʏᴀʀᴀᴛ, ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━\n
 » ᴅᴇᴠᴇʟᴏᴘᴇʀ : [ᴄᴀʟᴠɪɴ](tg://user?id={OWNER_ID})\n━━━━━━━━━━━━━\n\nsɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ɢʀᴏᴜᴘ ᴅᴀɴ sᴜᴘᴘᴏʀᴛ ᴋᴀᴍɪ ᴜɴᴛᴜᴋ ɪᴊɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ."
 """,
                 parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/UcalMeVin"),
+                        ],
+                    ],
             )
         except Unauthorized:
             LOGGER.warning(
