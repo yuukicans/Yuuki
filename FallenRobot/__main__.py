@@ -715,6 +715,7 @@ def main():
                             InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/UcalMeVin"),
                         ],
                     ],
+                )
             )
         except Unauthorized:
             LOGGER.warning(
