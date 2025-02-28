@@ -392,12 +392,12 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ", url=f"https://t.me/+ISzPvC9h6B85ZDU1"),
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ", url=f"https://t.me/+E3M5iLoVahUyYjY1"),
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ", url=f"https://t.me/+Mqlw87FyrLYyYjM1"),
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ", url=f"https://t.me/+9rg8DENaRZw5ODBl"),
                     ],
                     [
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴠɪᴄɪᴅɪᴏʀ", url=f"https://t.me/+Gok7Kc6Q5SA5NTQ1"),
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ", url=f"https://t.me/+-QStFZhEeUk0MDA1"),
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ", url=f"https://t.me/+Bohnh-t-Nbo3NWI1"),
                     ],
                     [
                         InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
