@@ -374,8 +374,8 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "fallen_support":
         query.message.edit_text(
-            text="*ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴍᴇʀᴜᴘᴀᴋᴀɴ ɢʀᴏᴜᴘ ᴅᴀɴ ᴄʜᴀɴɴᴇʟ ᴀsᴜᴘᴀɴ.*"
-            f"\n\nsɪʟᴀʜᴋᴀɴ ᴋᴀʟɪᴀɴ ᴊᴏɪɴ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴇʙᴇʀᴀᴘᴀ ᴠɪᴅᴇᴏ ᴠɪᴅᴇᴏ ᴛᴇʀᴠɪʀᴀʟ.",
+            text="*๏ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴍᴇʀᴜᴘᴀᴋᴀɴ ɢʀᴏᴜᴘ ᴅᴀɴ ᴄʜᴀɴɴᴇʟ ᴀsᴜᴘᴀɴ.*"
+            f"\n\n*๏ sɪʟᴀʜᴋᴀɴ ᴋᴀʟɪᴀɴ ᴊᴏɪɴ ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴇʙᴇʀᴀᴘᴀ ᴠɪᴅᴇᴏ ᴠɪᴅᴇᴏ ᴛᴇʀᴠɪʀᴀʟ.*",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -410,7 +410,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=f""" ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ / ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ + ᴍᴀɴᴀɢᴇ ᴄᴀʟᴠɪɴ.""",
+            text=f"""*๏ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ / ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ + ᴍᴀɴᴀɢᴇ ᴄᴀʟᴠɪɴ.*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -426,7 +426,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "source_back":
         query.message.edit_text(
-            text=f" ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ ᴘᴇʀɪɴᴛᴀʜ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴍᴜsɪᴄ / ᴠɪᴅᴇᴏ."
+            text=f"*๏ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ ᴘᴇʀɪɴᴛᴀʜ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴍᴜsɪᴄ / ᴠɪᴅᴇᴏ.*"
 f"\n\n/play ᴏʀ /vplay : ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀɢᴜɴᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ɢʀᴏᴜᴘ / ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ."
 f"\n\n/playforce ᴀᴛᴀᴜ /vplayforce : ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀғᴜɴɢsɪ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ʟᴀɢᴜ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ᴘᴇʀᴀɴɢᴋᴀᴛ ᴀɴᴅᴀ."
 f"\n\n/cplay : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢɪ ᴅɪ ᴄʜᴀɴɴᴇʟ ʏᴀɴɢ ᴛᴇʀʜᴜʙᴜɴɢ, /cvplay : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ᴠɪᴅᴇᴏ ᴅɪᴄʜᴀɴɴᴇʟ ʏᴀɴɢ ᴛᴇʀʜᴜʙᴜɴɢ.", 
@@ -688,8 +688,8 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-ㅤ🔥 {BOT_NAME} ᴀᴄᴛɪᴠᴇ ᴅᴀɴ sɪᴀᴘ ᴘᴀᴋᴀɪ...
-» sᴀʏᴀ {BOT_NAME}\n━━━━━━━━━━━━━\nʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪᴘᴇʀɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴇɴɢᴀɴ sʏᴀʀᴀᴛ, ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━
+๏ 🔥{BOT_NAME} ᴀᴄᴛɪᴠᴇ ᴅᴀɴ sɪᴀᴘ ᴘᴀᴋᴀɪ...
+๏ sᴀʏᴀ {BOT_NAME}\n━━━━━━━━━━━━━\n๏ ʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪᴘᴇʀɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴇɴɢᴀɴ sʏᴀʀᴀᴛ, ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━
 """,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
