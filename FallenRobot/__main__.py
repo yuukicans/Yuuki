@@ -69,15 +69,25 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
+PM_START_TEX = """
+ʜᴇʟʟᴏ `{}`, ᴀᴘᴀ ᴋᴀʙᴀʀ ᴋᴀᴋ \nᴛᴜɴɢɢᴜ ʙᴇɴᴛᴀʀ ʏᴀ . . . 
+"""
 
 
 PM_START_TEXT = """
 *ʜᴀʟʟᴏ* {}, 
 
 *๏ sᴀʏᴀ ᴀᴅᴀʟᴀʜ* {} !
-➻ ʙᴏᴛ ᴍᴜsɪᴄ ᴅᴀɴ ᴍᴀɴᴀɢᴇ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴏɴᴛʀᴏʟ ɢʀᴏᴜᴘ ᴀɴᴅᴀ.
-━━━━━━━━━━━━━
-*๏ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴘᴇʀɪɴᴛᴀʜ ᴅᴀɴ ᴍᴏᴅᴜʟ ʙᴏᴛ ɪɴɪ.*
+ɢᴀ ᴀᴅᴀ ʏᴀɴɢ sᴘᴇsɪᴀʟ sᴀᴍᴀ ᴀᴊᴀ ᴋᴇᴋ ʙᴏᴛ ᴍᴜsɪᴄ ʟᴀᴇɴ
+ʙᴏᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴋ
+ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ*
+─────────────────
+   *➻ ᴜsᴇʀs »* {}
+   *➻ ᴄʜᴀᴛs »* {}
+─────────────────
+*ᴅᴇᴠ: @UcalMeVin
+
+ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟ ᴅᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ⚠️*
 """
 
 buttons = [
@@ -87,15 +97,15 @@ buttons = [
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",),
     ],
     [
-        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ👑", url=f"tg://user?id={OWNER_ID}"),
     ],
     [
-        InlineKeyboardButton(text="ᴅᴏɴᴀᴛɪᴏɴ", callback_data="fallen_"),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/InfoMusicCalvin"),
+        InlineKeyboardButton(text="ᴅᴏɴᴀᴛɪᴏɴ 💰", callback_data="fallen_"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 📩", url=f"https://t.me/InfoMusicCalvin"),
     ],
     [
-        InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ", callback_data="source_"),
-        InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ", callback_data="fallen_support"),
+        InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ⁉️", callback_data="source_"),
+        InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ 💈", callback_data="fallen_support"),
     ],
 ]
 
@@ -412,8 +422,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴍᴜsɪᴄ", callback_data="source_back"),
-                        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
+                        InlineKeyboardButton(text="ᴍᴜsɪᴄ🎧", callback_data="source_back"),
+                        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ🗂", callback_data="help_back"),
                     ],
                     [
                         InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back")
