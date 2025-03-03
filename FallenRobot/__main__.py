@@ -217,6 +217,7 @@ def start(update: Update, context: CallbackContext):
             START_IMG,
             caption="ᴄᴀʟᴠɪɴ ʙᴏᴛ ᴀʟɪᴠᴇ🔥 !\n<b>ɢᴜᴀ ʙᴇʟᴜᴍ ᴛɪᴅᴜʀ ᴅᴀʀɪ​:</b> <code>{}</code>".format(
                 uptime
+                
             ),
             parse_mode=ParseMode.HTML,
         )
@@ -699,7 +700,7 @@ def main():
             )
         except Unauthorized:
             LOGGER.warning(
-                f"Bot isn't able to send message to @{SUPPORT_CHAT}, go and check!"
+                f"ʙᴏᴛ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ ᴋᴇ @{SUPPORT_CHAT}, ᴘᴇʀɢɪ ᴅᴀɴ ᴄᴇᴋ!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
