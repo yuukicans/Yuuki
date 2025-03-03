@@ -1,5 +1,5 @@
 {
-      "name": "Fallen Robot",
+      "name": "Calvij Robot",
       "description": "Telegram Group Management Bot.",
       "logo": "https://te.legra.ph/file/72e135da30a1a349f2844.jpg",
       "keywords": [
@@ -51,7 +51,7 @@
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1002458447761"
+         "value": "-1002309264742"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -71,7 +71,7 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Fallen Support than consider you made an enemy.",
          "required": true,
-         "value": "infomusiccalvin"
+         "value": "InfoRobotCalvin"
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
