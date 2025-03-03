@@ -94,7 +94,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="ᴅᴏɴᴀᴛɪᴏɴ 💰", callback_data="fallen_"),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 📩", url=f"https://t.me/InfoMusicCalvin"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 📩", url=f"https://t.me/InfoRobotCalvin"),
     ],
     [
         InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ⁉️", callback_data="source_"),
@@ -357,13 +357,13 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ǫʀɪs", url=f"https://t.me/InfoMusicCalvin/400",
+                            text="ǫʀɪs", url=f"https://t.me/InfoRobotCalvin/34",
                         ),
                         InlineKeyboardButton(
-                            text="ᴅᴀɴᴀ", url=f"https://t.me/InfoMusicCalvin/397"
+                            text="ᴅᴀɴᴀ", url=f"https://t.me/InfoRobotCalvin/32"
                         ),
                         InlineKeyboardButton(
-                            text="ᴏᴠᴏ", url=f"https://t.me/InfoMusicCalvin/398"
+                            text="ᴏᴠᴏ", url=f"https://t.me/InfoRobotCalvin/33"
                         ),              
                     ],
                     [
@@ -383,11 +383,8 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ɪʟᴍɪᴇ", url=f"https://t.me/+Mqlw87FyrLYyYjM1"),
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ", url=f"https://t.me/+9rg8DENaRZw5ODBl"),
-                    ],
-                    [
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ", url=f"https://t.me/+Bohnh-t-Nbo3NWI1"),
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ", url=f"https://t.me/+9rg8DENaRZw5ODBl"),
                     ],
                     [
                         InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
