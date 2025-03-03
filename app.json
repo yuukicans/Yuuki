@@ -1,7 +1,7 @@
 {
-      "name": "Calvin Robot",
-      "description": "Telegram Group Management Bot.",
-      "logo": "https://te.legra.ph/file/72e135da30a1a349f2844.jpg",
+      "name": "ᴄᴀʟᴠɪɴ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ",
+      "description": "ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʀᴏʙᴏᴛ.",
+      "logo": "https://files.catbox.moe/175nkq.jpg",
       "keywords": [
          "telegram",
          "modular",
@@ -23,12 +23,12 @@
       "API_ID": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
-         "value": "25316140"
+         "value": ""
       },
       "API_HASH": {
          "description": "Get this value from my.telegram.org/apps.",
          "required": true,
-         "value": "3a8354e0082c8c148a0608401e3a5a1a"
+         "value": ""
       },
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
@@ -51,12 +51,12 @@
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1002309264742"
+         "value": ""
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
          "required": true,
-         "value": "mongodb+srv://salsabila:1234@cluster0.abg3i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+         "value": ""
       },
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
@@ -81,7 +81,7 @@
       "TOKEN": {
          "description": "Get bot token from @BotFather on TG",
          "required": true,
-         "value": "7742051224:AAHTXzPqVVQTRDQeQsZI1wNkzwS0LpgOYTE"
+         "value": ""
       }
    }
 }
