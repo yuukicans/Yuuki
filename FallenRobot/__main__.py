@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
 
 
 def error_handler(update, context):
-    """ᴄᴀᴛᴀᴛ ᴋᴇsᴀʟᴀʜᴀɴ ᴅᴀɴ ᴋɪʀɪᴍ ᴘᴇsᴀɴ ᴛᴇʟᴇɢʀᴀᴍ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʀɪ ᴛᴀʜᴜ ᴅᴇᴠᴇʟᴏᴘᴇʀ."""
+    """Catat Kesalahan Dan Kirim Pesan Telegram Untuk Memberi Tahu Developer."""
     # Log the error before we do anything else, so we can see it even if something breaks.
     LOGGER.error(msg="Exception while handling an update:", exc_info=context.error)
 
@@ -683,7 +683,7 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-๏ 🔥{BOT_NAME} ᴀᴄᴛɪᴠᴇ ᴅᴀɴ sɪᴀᴘ ᴘᴀᴋᴀɪ...
+๏ 🔥{BOT_NAME} ᴀᴄᴛɪᴠᴇ...
 ๏ sᴀʏᴀ {BOT_NAME}\n━━━━━━━━━━━━━\n๏ ʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪᴘᴇʀɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴇɴɢᴀɴ sʏᴀʀᴀᴛ, ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━
 """,
                 parse_mode=ParseMode.MARKDOWN,
