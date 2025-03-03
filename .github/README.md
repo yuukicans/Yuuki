@@ -1,9 +1,9 @@
 <h2 align="center">
-    ──「 ғᴀʟʟᴇɴ ✘ ʀᴏʙᴏᴛ 」──
+    ──「 ᴄᴀʟᴠɪɴ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ 」──
 </h2>
 
 <p align="center">
-  <img src="https://graph.org/file/6961eb4e48ff175661166.jpg">
+  <img src="https://files.catbox.moe/pp9026.jpg">
 </p>
 
 **_Available on Telegram as [@FallenxBot](https://t.me/FallenxBot)_**
@@ -37,7 +37,7 @@
 - <b>VPS/Local Deployment Method</b>
 </h3></summary>
 
-- Get your [Necessary Variables](https://github.com/AnonymousX1025/FallenRobot/blob/master/FallenRobot/config.py)
+- Get your [Necessary Variables](https://github.com/petinggint/managevin/blob/master/FallenRobot/config.py)
 - Upgrade and Update by :
 `sudo apt-get update && sudo apt-get upgrade -y`
 - Install required packages by :
@@ -45,7 +45,7 @@
 - Install pip by :
 `sudo pip3 install -U pip`
 - Clone the repository by :
-`git clone https://github.com/AnonymousX1025/FallenRobot && cd FallenRobot`
+`git clone https://github.com/petinggint/managevin && cd FallenRobot`
 - Install/Upgrade setuptools by :
 `pip3 install --upgrade pip setuptools`
 - Install requirements by :
@@ -65,7 +65,7 @@ Press `Ctrl+C` when you're done with editing config and `:wq` to save the config
 Press `Ctrl+b` and then `d`
 
 <p align="center">
-  <img src="https://graph.org/file/4e2bc734e411e2060cb12.png">
+  <img src="https://files.catbox.moe/pp9026.jpg">
 </p>
 
 </details>
@@ -76,10 +76,10 @@ Press `Ctrl+b` and then `d`
 </h3>
 
 <p align="center">
-<a href="https://telegram.me/DevilsHeavenMF"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/UcalMeVin"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 <p align="center">
-<a href="https://telegram.me/FallenAssociation"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/InfoRobotCalvin"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -88,8 +88,6 @@ Press `Ctrl+b` and then `d`
     ─「 Credits 」─
 </h3>
 
-- <b>[Me](https://github.com/AnonymousX1025)</b>
-- <b>[Paul Larsen](https://github.com/PaulSonOfLars) for [Tg Bot](https://github.com/PaulSonOfLars/tgbot)</b>
-- <b>[Hamker Cat](https://github.com/TheHamkerCat) for [William Butcher](https://github.com/TheHamkerCat/WilliamButcherBot)</b>
+- <b>[Me](https://github.com/petinggint)</b>
  
-<b>and all other [contributors](https://github.com/AnonymousX1025/FallenRobot/graphs/contributors) who helped in making this project possible.</b>
+<b>and all other [contributors](https://github.com/petinggint/managevin/graphs/contributors) who helped in making this project possible.</b>
