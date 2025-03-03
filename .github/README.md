@@ -6,12 +6,12 @@
   <img src="https://files.catbox.moe/pp9026.jpg">
 </p>
 
-**_Available on Telegram as [@FallenxBot](https://t.me/FallenxBot)_**
+**_Available on Telegram as [@CalvinAiRobot](https://t.me/CalvinAiRobot)_**
 
 <p align="center">
-<a href="https://github.com/AnonymousX1025/FallenRobot/stargazers"><img src="https://img.shields.io/github/stars/AnonymousX1025/FallenRobot?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars"/></a>
-<a href="https://github.com/AnonymousX1025/FallenRobot/network/members"> <img src="https://img.shields.io/github/forks/AnonymousX1025/FallenRobot?color=black&logo=github&logoColor=black&style=for-the-badge"/></a>
-<a href="https://github.com/AnonymousX1025/FallenRobot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License"/></a>
+<a href="https://github.com/petinggint/managevin/stargazers"><img src="https://img.shields.io/github/stars/petinggint/managevin?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars"/></a>
+<a href="https://github.com/petinggint/managevin/network/members"> <img src="https://img.shields.io/github/forks/petinggint/managevin?color=black&logo=github&logoColor=black&style=for-the-badge"/></a>
+<a href="https://github.com/petinggint/managevin/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License"/></a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-skyblue?style=for-the-badge&logo=python" alt="Python"/></a>
 </p>
 
