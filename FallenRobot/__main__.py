@@ -86,11 +86,8 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="+ add me +",
+            text="+ ᴀᴅᴅ ᴍᴇ +",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",),
-    ],
-    [
-        InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ 👑", url=f"tg://user?id={OWNER_ID}"),
     ],
     [
         InlineKeyboardButton(text="ᴅᴏɴᴀᴛɪᴏɴ 💰", callback_data="fallen_"),
@@ -215,7 +212,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ᴄᴀʟᴠɪɴ ʙᴏᴛ ᴀʟɪᴠᴇ🔥 !\n<b>ɢᴜᴀ ʙᴇʟᴜᴍ ᴛɪᴅᴜʀ ᴅᴀʀɪ​:</b> <code>{}</code>".format(
+            caption="ᴄᴀʟᴠɪɴ ʙᴏᴛ ᴀᴋᴛɪᴘ🔥 !\n<b>ᴀᴋᴛɪᴘ ᴅᴀʀɪ​:</b> <code>{}</code>".format(
                 uptime
                 
             ),
@@ -224,7 +221,7 @@ def start(update: Update, context: CallbackContext):
 
 
 def error_handler(update, context):
-    """Log the error and send a telegram message to notify the developer."""
+    """ᴄᴀᴛᴀᴛ ᴋᴇsᴀʟᴀʜᴀɴ ᴅᴀɴ ᴋɪʀɪᴍ ᴘᴇsᴀɴ ᴛᴇʟᴇɢʀᴀᴍ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʀɪ ᴛᴀʜᴜ ᴅᴇᴠᴇʟᴏᴘᴇʀ."""
     # Log the error before we do anything else, so we can see it even if something breaks.
     LOGGER.error(msg="Exception while handling an update:", exc_info=context.error)
 
@@ -521,7 +518,7 @@ def send_settings(chat_id, user_id, user=False):
         else:
             dispatcher.bot.send_message(
                 user_id,
-                "Seems like there aren't any user specific settings available :'(",
+                "sᴇᴘᴇʀᴛɪɴʏᴀ ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇɴɢᴀᴛᴜʀᴀɴ ᴋʜᴜsᴜs ᴘᴇɴɢɢᴜɴᴀ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ :'(",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
@@ -530,7 +527,7 @@ def send_settings(chat_id, user_id, user=False):
             chat_name = dispatcher.bot.getChat(chat_id).title
             dispatcher.bot.send_message(
                 user_id,
-                text="Which module would you like to check {}'s settings for?".format(
+                text="ᴍᴏᴅᴜʟᴇ ᴍᴀɴᴀ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ᴘᴇʀɪᴋsᴀ {}'s settings for?".format(
                     chat_name
                 ),
                 reply_markup=InlineKeyboardMarkup(
@@ -540,8 +537,8 @@ def send_settings(chat_id, user_id, user=False):
         else:
             dispatcher.bot.send_message(
                 user_id,
-                "Seems like there aren't any chat settings available :'(\nSend this "
-                "in a group chat you're admin in to find its current settings!",
+                "sᴇᴘᴇʀᴛɪɴʏᴀ ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇɴɢᴀᴛᴜʀᴀɴ ᴏʙʀᴏʟᴀɴ ʏᴀɴɢ ᴛᴇʀsᴇᴅɪᴀ :'(\nSend this "
+                "ᴅᴀʟᴀᴍ ᴏʙʀᴏʟᴀɴ ɢʀᴜᴘ ᴛᴇᴍᴘᴀᴛ ᴀɴᴅᴀ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ ᴜɴᴛᴜᴋ ᴍᴇɴᴇᴍᴜᴋᴀɴ ᴘᴇɴɢᴀᴛᴜʀᴀɴ sᴀᴀᴛ ɪɴɪ!",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
@@ -582,8 +579,8 @@ def settings_button(update: Update, context: CallbackContext):
             curr_page = int(prev_match.group(2))
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
-                "Hi there! There are quite a few settings for {} - go ahead and pick what "
-                "you're interested in.".format(chat.title),
+                "ʜᴀɪ, ᴀᴅᴀ ʙᴇʙᴇʀᴀᴘᴀ ᴘᴇɴɢᴀᴛᴜʀᴀɴ ᴜɴᴛᴜᴋ {} - ʟᴀɴᴊᴜᴛᴋᴀɴ ᴅᴀɴ ᴘɪʟɪʜ ᴀᴘᴀ "
+                "ᴋᴀᴍᴜ ᴛᴇʀᴛᴀʀɪᴋ ᴘᴀᴅᴀ.".format(chat.title),
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(
                         curr_page - 1, CHAT_SETTINGS, "stngs", chat=chat_id
@@ -596,8 +593,8 @@ def settings_button(update: Update, context: CallbackContext):
             next_page = int(next_match.group(2))
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
-                "Hi there! There are quite a few settings for {} - go ahead and pick what "
-                "you're interested in.".format(chat.title),
+                "ʜᴀɪ, ᴀᴅᴀ ʙᴇʙᴇʀᴀᴘᴀ ᴘᴇɴɢᴀᴛᴜʀᴀɴ ᴜɴᴛᴜᴋ {} - ʟᴀɴᴊᴜᴛᴋᴀɴ ᴅᴀɴ ᴘɪʟɪʜ ᴀᴘᴀ "
+                "ᴋᴀᴍᴜ ᴛᴇʀᴛᴀʀɪᴋ ᴘᴀᴅᴀ.".format(chat.title),
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(
                         next_page + 1, CHAT_SETTINGS, "stngs", chat=chat_id
@@ -609,8 +606,8 @@ def settings_button(update: Update, context: CallbackContext):
             chat_id = back_match.group(1)
             chat = bot.get_chat(chat_id)
             query.message.reply_text(
-                text="Hi there! There are quite a few settings for {} - go ahead and pick what "
-                "you're interested in.".format(escape_markdown(chat.title)),
+                text="ʜᴀɪ, ᴀᴅᴀ ʙᴇʙᴇʀᴀᴘᴀ ᴘᴇɴɢᴀᴛᴜʀᴀɴ ᴜɴᴛᴜᴋ {} - ʟᴀɴᴊᴜᴛᴋᴀɴ ᴅᴀɴ ᴘɪʟɪʜ ᴀᴘᴀ "
+                "ᴋᴀᴍᴜ ᴛᴇʀᴛᴀʀɪᴋ ᴘᴀᴅᴀ.".format(escape_markdown(chat.title)),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     paginate_modules(0, CHAT_SETTINGS, "stngs", chat=chat_id)
@@ -622,9 +619,9 @@ def settings_button(update: Update, context: CallbackContext):
         query.message.delete()
     except BadRequest as excp:
         if excp.message not in [
-            "Message is not modified",
+            "ᴘᴇsᴀɴ ᴛɪᴅᴀᴋ ᴅɪ ᴍᴏᴅɪғɪᴋᴀsɪ",
             "Query_id_invalid",
-            "Message can't be deleted",
+            "ᴘᴇsᴀɴ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴅɪ ʜᴀᴘᴜs",
         ]:
             LOGGER.exception("Exception in settings buttons. %s", str(query.data))
 
@@ -637,7 +634,7 @@ def get_settings(update: Update, context: CallbackContext):
     # ONLY send settings in PM
     if chat.type != chat.PRIVATE:
         if is_user_admin(chat, user.id):
-            text = "Click here to get this chat's settings, as well as yours."
+            text = "ᴋʟɪᴋ ᴅɪsɪɴɪ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛʟᴀɴ ᴘᴇɴɢᴀᴛᴜʀᴀɴ ᴏʙʀᴏʟᴀɴ ɪɴɪ, ᴅᴀɴ ᴊᴜɢᴀ ᴍɪʟɪᴋ ᴀɴᴅᴀ."
             msg.reply_text(
                 text,
                 reply_markup=InlineKeyboardMarkup(
