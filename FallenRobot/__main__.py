@@ -683,8 +683,8 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-๏ 🔥{BOT_NAME} ᴀᴄᴛɪᴠᴇ...
-๏ sᴀʏᴀ {BOT_NAME}\n━━━━━━━━━━━━━\n๏ ʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪᴘᴇʀɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴇɴɢᴀɴ sʏᴀʀᴀᴛ, ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━
+๏ 🔥{BOT_NAME} ᴀᴄᴛɪᴠᴇ
+\n━━━━━━━━━━━━━\n๏ ʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪᴘᴇʀɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴇɴɢᴀɴ sʏᴀʀᴀᴛ, ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━
 """,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
