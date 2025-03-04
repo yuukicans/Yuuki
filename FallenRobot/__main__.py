@@ -419,7 +419,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "source_back":
         query.message.edit_text(
-            text=f"*» {BOT_NAME} ᴍᴀɴᴀɢᴇ ɢʀᴜᴘ ғɪᴛᴜʀ*"
+            text=f"*» {BOT_NAME} ᴍᴜsɪᴄ ɢʀᴜᴘ ғɪᴛᴜʀ*"
+            
 f"\n๏ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ ᴘᴇʀɪɴᴛᴀʜ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴍᴜsɪᴄ / ᴠɪᴅᴇᴏ."
 f"\n\n/play ᴏʀ /vplay : ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀɢᴜɴᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ɢʀᴏᴜᴘ / ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ."
 f"\n\n/playforce ᴏʀ /vplayforce : ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀғᴜɴɢsɪ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ʟᴀɢᴜ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ᴘᴇʀᴀɴɢᴋᴀᴛ ᴀɴᴅᴀ."
