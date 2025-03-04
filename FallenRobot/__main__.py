@@ -101,9 +101,7 @@ buttons = [
 
 HELP_STRINGS = f"""
 *» {BOT_NAME} ᴍᴀɴᴀɢᴇ ɢʀᴜᴘ ғɪᴛᴜʀ*
-
-➲ /start : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴏʙʀᴏʟᴀɴ ᴅᴇɴɢᴀɴ ʙᴏᴛ.
-➲ /help  : ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ɪɴɪ."""
+"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -355,13 +353,13 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ǫʀɪs", url=f"https://t.me/InfoRobotCalvin/34",
+                            text="ǫʀɪs💸", url=f"https://t.me/InfoRobotCalvin/34",
                         ),
                         InlineKeyboardButton(
-                            text="ᴅᴀɴᴀ", url=f"https://t.me/InfoRobotCalvin/32"
+                            text="ᴅᴀɴᴀ💸", url=f"https://t.me/InfoRobotCalvin/32"
                         ),
                         InlineKeyboardButton(
-                            text="ᴏᴠᴏ", url=f"https://t.me/InfoRobotCalvin/33"
+                            text="ᴏᴠᴏ💸", url=f"https://t.me/InfoRobotCalvin/33"
                         ),              
                     ],
                     [
@@ -378,11 +376,11 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
+                        InlineKeyboardButton(text="ᴏғғɪᴄɪᴀʟ sᴇᴄʀᴇᴛ", url=f"https://t.me/SecretVibesOfc"),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴄᴀʀᴍɪʟᴀ", url=f"https://t.me/+Bohnh-t-Nbo3NWI1"),
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ", url=f"https://t.me/+9rg8DENaRZw5ODBl"),
+                        InlineKeyboardButton(text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs🔞", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
+                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ🔞", url=f"https://t.me/+9rg8DENaRZw5ODBl"),
                     ],
                     [
                         InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
@@ -691,6 +689,7 @@ def main():
                     [
                         [
                             InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/UcalMeVin"),
+                            InlineKeyboardButton(text="ᴀsᴜᴘᴀɴ", url=f"https://t.me/+kUWAHj8kxs9kMzRl "),
                         ],
                     ],
                 )
