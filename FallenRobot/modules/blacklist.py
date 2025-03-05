@@ -130,7 +130,7 @@ def unblacklist(update, context):
     msg = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
-    words = msg.text.split(None, 1)
+    reply_msg = msg.reply_to_message  # Ambil pesan yang di-reply
 
     conn = connected(context.bot, update, chat, user.id)
     if conn:
@@ -143,16 +143,18 @@ def unblacklist(update, context):
         else:
             chat_name = chat.title
 
-    if len(words) > 1:
-        text = words[1]
-        to_unblacklist = list(
-            {trigger.strip() for trigger in text.split("\n") if trigger.strip()}
-        )
-        successful = 0
-        for trigger in to_unblacklist:
-            success = sql.rm_from_blacklist(chat_id, trigger.lower())
-            if success:
-                successful += 1
+    if reply_msg:  # Jika ada pesan yang di-reply
+        text = reply_msg.text
+    else:
+        words = msg.text.split(None, 1)
+        if len(words) > 1:
+            text = words[1]
+        else:
+            send_message(
+                update.effective_message,
+                "ᴋᴀsɪʜ ᴋᴀᴛᴀ ᴋᴀᴛᴀ ɴʏᴀ ᴅᴏɴɢ ᴋᴇɴᴛᴏᴅ ᴍᴀɴᴀ ʏᴀɴɢ ᴍᴀᴜ ᴅɪ ʙʟᴀᴄᴋʟɪsᴛ.",
+            )
+            return
 
         if len(to_unblacklist) == 1:
             if successful:
