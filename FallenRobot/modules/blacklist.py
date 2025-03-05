@@ -73,7 +73,7 @@ def add_blacklist(update, context):
     msg = update.effective_message
     chat = update.effective_chat
     user = update.effective_user
-    words = msg.text.split(None, 1)
+    reply_msg = msg.reply_to_message  # Ambil pesan yang di-reply
 
     conn = connected(context.bot, update, chat, user.id)
     if conn:
@@ -85,7 +85,9 @@ def add_blacklist(update, context):
             return
         else:
             chat_name = chat.title
-
+		
+    if reply_msg:  # Jika ada pesan yang di-reply
+        text = reply_msg.text
     if len(words) > 1:
         text = words[1]
         to_blacklist = list(
