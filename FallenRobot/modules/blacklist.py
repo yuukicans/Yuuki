@@ -161,7 +161,7 @@ def unblacklist(update, context):
     )
     
     for trigger in to_unblacklist:
-        sql.add_to_unblacklist(chat_id, trigger.lower())
+        sql.to_unblacklist(chat_id, trigger.lower())
 
         if len(to_unblacklist) == 1:
             if successful:
