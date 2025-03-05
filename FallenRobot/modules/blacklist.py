@@ -167,7 +167,7 @@ def unblacklist(update, context):
                 )
             else:
                 send_message(
-                    update.effective_message, "This is not a blacklist trigger!"
+                    update.effective_message, "ᴋᴀᴛᴀ ᴋᴀᴛᴀ ɪɴɪ ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅɪ ᴅᴀғᴛᴀʀ ʙʟᴀᴄᴋʟɪsᴛ!"
                 )
 
         elif successful == len(to_unblacklist):
@@ -194,13 +194,7 @@ def unblacklist(update, context):
                     successful, len(to_unblacklist) - successful
                 ),
                 parse_mode=ParseMode.HTML,
-            )
-    else:
-        send_message(
-            update.effective_message,
-            "ᴋᴀsɪʜ ᴋᴀᴛᴀ ᴋᴀᴛᴀ ɴʏᴀ ᴅᴏɴɢ ᴋᴇɴᴛᴏᴅ ᴍᴀɴᴀ ʏᴀɴɢ ᴍᴀᴜ ᴅɪʜᴀᴘᴜs ʙʟᴀᴄᴋʟɪsᴛ!",
-        )
-
+	    )
 
 @loggable
 @user_admin
