@@ -160,7 +160,7 @@ def unblacklist(update, context):
         {trigger.strip() for trigger in text.split("\n") if trigger.strip()}
     )
     
-    for trigger in to_blacklist:
+    for trigger in to_unblacklist:
         sql.add_to_unblacklist(chat_id, trigger.lower())
 
         if len(to_unblacklist) == 1:
