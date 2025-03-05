@@ -155,6 +155,13 @@ def unblacklist(update, context):
                 "ᴋᴀsɪʜ ᴋᴀᴛᴀ ᴋᴀᴛᴀ ɴʏᴀ ᴅᴏɴɢ ᴋᴇɴᴛᴏᴅ ᴍᴀɴᴀ ʏᴀɴɢ ᴍᴀᴜ ᴅɪ ʙʟᴀᴄᴋʟɪsᴛ.",
             )
             return
+		
+    to_unblacklist = list(
+        {trigger.strip() for trigger in text.split("\n") if trigger.strip()}
+    )
+    
+    for trigger in to_blacklist:
+        sql.add_to_unblacklist(chat_id, trigger.lower())
 
         if len(to_unblacklist) == 1:
             if successful:
@@ -164,12 +171,8 @@ def unblacklist(update, context):
                         html.escape(to_unblacklist[0]), html.escape(chat_name)
                     ),
                     parse_mode=ParseMode.HTML,
-                )
-            else:
-                send_message(
-                    update.effective_message, "ᴋᴀᴛᴀ ᴋᴀᴛᴀ ɪɴɪ ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴅɪ ᴅᴀғᴛᴀʀ ʙʟᴀᴄᴋʟɪsᴛ!"
-                )
-
+		)
+		    
         elif successful == len(to_unblacklist):
             send_message(
                 update.effective_message,
