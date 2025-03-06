@@ -85,7 +85,7 @@ if is_module_loaded(FILENAME):
         except BadRequest as excp:
             if excp.message == "Chat not found":
                 bot.send_message(
-                    orig_chat_id, "This log channel has been deleted - unsetting."
+                    orig_chat_id, "sᴀʟᴜʀᴀɴ ʟᴏɢ ɪɴɪ ᴛᴇʟᴀʜ ᴅɪ ʜᴀᴘᴜs - ᴛɪᴅᴀᴋ ᴛᴇʀᴋᴀɪᴛ."
                 )
                 sql.stop_chat_logging(orig_chat_id)
             else:
@@ -96,7 +96,7 @@ if is_module_loaded(FILENAME):
                 bot.send_message(
                     log_chat_id,
                     result
-                    + "\n\nFormatting has been disabled due to an unexpected error.",
+                    + "\n\nᴘᴇᴍғᴏʀᴍᴀᴛᴀɴ ᴛᴇʟᴀʜ ᴅɪ ɴᴏɴᴀᴋᴛɪᴘᴋᴀɴ ᴋᴀʀᴇɴᴀ ᴋᴇsᴀʟᴀʜᴀɴ ʏᴀɴɢ ᴛɪᴅᴀᴋ ᴛᴇʀᴅᴜɢᴀ.",
                 )
 
     @user_admin
@@ -109,13 +109,13 @@ if is_module_loaded(FILENAME):
         if log_channel:
             log_channel_info = bot.get_chat(log_channel)
             message.reply_text(
-                f"This group has all it's logs sent to:"
+                f"ɢʀᴜᴘ ɪɴɪ ᴍᴇᴍɪʟɪᴋɪ sᴇᴍᴜᴀ ʟᴏɢ ʏᴀɴɢ ᴅɪ ᴋɪʀɪᴍ ᴋᴇ:"
                 f" {escape_markdown(log_channel_info.title)} (`{log_channel}`)",
                 parse_mode=ParseMode.MARKDOWN,
             )
 
         else:
-            message.reply_text("Tidak Ada Saluran Log Yang Ditetapkan Untuk Grup Ini!")
+            message.reply_text("ᴛɪᴅᴀᴋ ᴀᴅᴀ sᴀʟᴜʀᴀɴ ʟᴏɢ ʏᴀɴɢ ᴅɪ ᴛᴇᴛᴀᴘᴋᴀɴ ᴜɴᴛᴜᴋ ɢʀᴜᴘ ɪɴɪ!")
 
     @user_admin
     def setlog(update: Update, context: CallbackContext):
@@ -124,7 +124,7 @@ if is_module_loaded(FILENAME):
         chat = update.effective_chat
         if chat.type == chat.CHANNEL:
             message.reply_text(
-                "Sekarang, teruskan /setLog ke grup yang ingin Anda ikat saluran ini!"
+                "sᴇᴋᴀʀᴀɴɢ, ᴛᴇʀᴜsᴋᴀɴ /setLog ᴋᴇ ɢʀᴜᴘ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ɪᴋᴀᴛ sᴀʟᴜʀᴀɴ ɪɴɪ!"
             )
 
         elif message.forward_from_chat:
@@ -132,32 +132,32 @@ if is_module_loaded(FILENAME):
             try:
                 message.delete()
             except BadRequest as excp:
-                if excp.message == "Message to delete not found":
+                if excp.message == "ᴘᴇsᴀɴ ʏᴀɴɢ ɪɴɢɪɴ ᴅɪ ʜᴀᴘᴜs ᴛɪᴅᴀᴋ ᴅɪ ᴛᴇᴍᴜᴋᴀɴ":
                     pass
                 else:
                     LOGGER.exception(
-                        "Kesalahan Menghapus Pesan di Saluran Log.  Harus tetap bekerja tetap."
+                        "ᴋᴇsᴀʟᴀʜᴀɴ ᴍᴇɴɢʜᴀᴘᴜs ᴘᴇsᴀɴ ᴅɪ sᴀʟᴜʀᴀɴ ʟᴏɢ.  ʜᴀʀᴜs ᴘᴇᴋᴇʀᴊᴀ ᴛᴇᴛᴀᴘ."
                     )
 
             try:
                 bot.send_message(
                     message.forward_from_chat.id,
-                    f"Saluran ini telah ditetapkan sebagai saluran log {chat.title or chat.first_name}.",
+                    f"sᴀʟᴜʀᴀɴ ɪɴɪ ᴛᴇʟᴀʜ ᴅɪ ᴛᴇᴛᴀᴘᴋᴀɴ sᴇʙᴀɢᴀɪ sᴀʟᴜʀᴀɴ ʟᴏɢ {chat.title or chat.first_name}.",
                 )
             except Unauthorized as excp:
-                if excp.message == "Terlarang: Bot bukan anggota obrolan saluran":
-                    bot.send_message(chat.id, "Successfully set log channel!")
+                if excp.message == "ʙᴏᴛ ʙᴜᴋᴀɴ ᴀɴɢɢᴏᴛᴀ sᴀʟᴜʀᴀɴ":
+                    bot.send_message(chat.id, "sᴜᴄᴄᴇs sᴇᴛᴛɪɴɢ ʟᴏɢ ᴄʜᴀɴɴᴇʟ!")
                 else:
-                    LOGGER.exception("Kesalahan dalam Mengatur Saluran Log.")
+                    LOGGER.exception("ᴋᴇsᴀʟᴀʜᴀɴ ᴅᴀʟᴀᴍ ᴍᴇɴɢᴀᴛᴜʀ sᴀʟᴜʀᴀɴ ʟᴏɢ.")
 
-            bot.send_message(chat.id, "Berhasil mengatur saluran log!")
+            bot.send_message(chat.id, "ʙᴇʀʜᴀsɪʟ ᴍᴇɴɢᴀᴛᴜʀ sᴀʟᴜʀᴀɴ ʟᴏɢ!")
 
         else:
             message.reply_text(
-                "Langkah -langkah untuk mengatur saluran log adalah:\n"
-                " - Tambahkan bot ke saluran yang diinginkan\n"
-                " - Kirim /Setlog ke saluran\n"
-                " - meneruskan /setLog ke grup\n"
+                "ʟᴀɴɢᴋᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴀᴛᴜʀ sᴀʟᴜʀᴀɴ ʟᴏɢ:\n"
+                " - ᴛᴀᴍʙᴀʜᴋᴀɴ ʙᴏᴛ ᴋᴇ sᴀʟᴜʀᴀɴ ʏᴀɴɢ ᴅɪ ɪɴɢɪɴᴋᴀɴ\n"
+                " - ᴋɪʀɪᴍ /Setlog ᴅɪ ᴅᴀʟᴀᴍ ᴄʜᴀɴɴᴇʟ\n"
+                " - ᴛᴇʀᴜsᴋᴀɴ /setLog ᴋᴇ ɢʀᴏᴜᴘ\n"
             )
 
     @user_admin
@@ -169,12 +169,12 @@ if is_module_loaded(FILENAME):
         log_channel = sql.stop_chat_logging(chat.id)
         if log_channel:
             bot.send_message(
-                log_channel, f"Saluran telah tidak terhubung dari {chat.title}"
+                log_channel, f"sᴀʟᴜʀᴀɴ ᴛᴇʟᴀʜ ᴛɪᴅᴀᴋ ᴛᴇʀʜᴜʙᴜɴɢ {chat.title}"
             )
-            message.reply_text("Saluran log tidak diatur.")
+            message.reply_text("sᴀʟᴜʀᴀɴ ʟᴏɢ ᴛɪᴅᴀᴋ ᴅɪ ᴀᴛᴜʀ.")
 
         else:
-            message.reply_text("Belum ada saluran log yang telah ditetapkan!")
+            message.reply_text("ʙᴇʟᴜᴍ ᴀᴅᴀ sᴀʟᴜʀᴀɴ ʟᴏɢ ʏᴀɴɢ ᴅɪ ᴛᴇᴛᴀᴘᴋᴀɴ!")
 
     def __stats__():
         return f"• {sql.num_logchannels()} log channels set."
@@ -186,19 +186,19 @@ if is_module_loaded(FILENAME):
         log_channel = sql.get_chat_log_channel(chat_id)
         if log_channel:
             log_channel_info = dispatcher.bot.get_chat(log_channel)
-            return f"Grup ini memiliki semua log yang dikirim ke: {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
-        return "Tidak ada saluran log yang diatur untuk grup ini!"
+            return f"ɢʀᴜᴘ ɪɴɪ ᴍᴇᴍɪʟɪᴋɪ sᴇᴍᴜᴀ ʟᴏɢ ʏᴀɴɢ ᴅɪᴋɪʀɪᴍ ᴋᴇ : {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
+        return "ᴛɪᴅᴀᴋ ᴀᴅᴀ sᴀʟᴜʀᴀɴ ʟᴏɢ ʏᴀɴɢ ᴅɪ ᴀᴛᴜʀ ᴜɴᴛᴜᴋ ɢʀᴜᴘ ɪɴɪ!"
 
     __help__ = """
 *Admins only:*
- ❍ /logchannel*:* get log channel info
- ❍ /setlog*:* set the log channel.
- ❍ /unsetlog*:* unset the log channel.
+ ❍ /logchannel*:* ᴍᴇʟɪʜᴀᴛ ɪɴғᴏ ʟᴏɢ ᴄʜᴀɴɴᴇʟ
+ ❍ /setlog*:* sᴇᴛᴛɪɴɢ ʟᴏɢ ᴄʜᴀɴɴᴇʟ.
+ ❍ /unsetlog*:* ᴜɴsᴇᴛᴛɪɴɢ ʟᴏɢ ᴄʜᴀɴɴᴇʟ.
 
 Setting the log channel is done by:
-❍ adding the bot to the desired channel (as an admin!)
-❍ sending /setlog in the channel
-❍ forwarding the /setlog to the group
+❍ ᴛᴀᴍʙᴀʜᴋᴀɴ ʙᴏᴛ ᴋᴇᴅᴀʟᴀᴍ ᴄʜᴀɴɴᴇʟ (ᴅᴀɴ ᴀᴅᴍɪɴᴋᴀɴ!)
+❍ ᴋɪʀɪᴍ /setlog ᴅɪ ᴅᴀʟᴀᴍ ᴄʜᴀɴɴᴇʟ
+❍ ғᴏʀᴡᴀᴅ ᴘᴇsᴀɴ /setlog ᴋɪʀɪᴍ ᴋᴇ ɢʀᴏᴜᴘ
 """
 
     __mod_name__ = "ʟᴏɢs"
