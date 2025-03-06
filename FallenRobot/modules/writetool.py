@@ -12,16 +12,16 @@ def handwrite(update: Update, context: CallbackContext):
         text = message.reply_to_message.text
     else:
         text = update.effective_message.text.split(None, 1)[1]
-    m = message.reply_text("ᴍᴇɴᴜʟɪꜱ ᴛᴇxᴛ ʟᴜ...")
+    m = message.reply_text("ᴍᴇɴᴜʟɪꜱ ᴛᴇxᴛ ᴀɴᴅᴀ...")
     req = requests.get(f"https://api.sdbots.tk/write?text={text}").url
     message.reply_photo(
         photo=req,
         caption=f"""
 ʙᴇʀʜᴀꜱɪʟ ᴍᴇɴᴜʟɪꜱ ᴛᴇxᴛ 💘
 
-✨ **Written By :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
-🥀 **Requested by :** {update.effective_user.first_name}
-❄ **Link :** `{req}`""",
+✨**ᴅɪᴛᴜʟɪs ᴏʟᴇʜ :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
+✨**ᴘᴇʀᴍɪɴᴛᴀᴀɴ ᴅᴀʀɪ :** {update.effective_user.first_name}
+❄ **ʟɪɴᴋ :** `{req}`""",
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -35,9 +35,9 @@ def handwrite(update: Update, context: CallbackContext):
 
 
 __help__ = """
- Writes the given text on white page with a pen 🖊
+ ᴍᴇɴᴜʟɪsᴋᴀɴ ᴛᴇᴋs ʏᴀɴɢ ᴅɪ ʙᴇʀɪᴋᴀɴ ᴘᴀᴅᴀ ʜᴀʟᴀᴍᴀɴ ᴋᴇʀᴛᴀs ᴅᴇɴɢᴀɴ ᴘᴇɴᴀ 🖊
 
-❍ /write <text> *:*Writes the given text.
+❍ /write <text> *:*ᴍᴇɴᴜʟɪs ᴘᴇsᴀɴ ᴛᴇᴋs.
 """
 
 WRITE_HANDLER = DisableAbleCommandHandler("write", handwrite, run_async=True)
