@@ -42,7 +42,7 @@ def get_user_id(username):
                 if excp.message == "Chat not found":
                     pass
                 else:
-                    LOGGER.exception("Error extracting user ID")
+                    LOGGER.exception("ᴇʀᴏʀ ᴇxᴛᴀᴋsɪ ᴜsᴇʀ ɪᴅ")
 
     return None
 
@@ -89,7 +89,7 @@ def broadcast(update: Update, context: CallbackContext):
                 except TelegramError:
                     failed_user += 1
         update.effective_message.reply_text(
-            f"Broadcast complete.\nGroups failed: {failed}.\nUsers failed: {failed_user}."
+            f"ʙʀᴏᴀᴅᴄᴀsᴛ ᴄᴏᴍᴘʟᴇᴛᴇ.\nɢʀᴏᴜᴘs ɢᴀɢᴀʟ : {failed}.\nᴜsᴇʀ ɢᴀɢᴀʟ : {failed_user}."
         )
 
 
@@ -114,7 +114,7 @@ def log_user(update: Update, context: CallbackContext):
 @sudo_plus
 def chats(update: Update, context: CallbackContext):
     all_chats = sql.get_all_chats() or []
-    chatfile = "List of chats.\n0. Chat name | Chat ID | Members count\n"
+    chatfile = "ʟɪsᴛ ᴏғ ᴄʜᴀᴛ.\n0. ᴄʜᴀᴛ ɴᴀᴍᴇ | ᴄʜᴀᴛ ɪᴅ | ᴍᴇᴍʙᴇʀ ᴄᴏᴜɴᴛ\n"
     P = 1
     for chat in all_chats:
         try:
@@ -133,7 +133,7 @@ def chats(update: Update, context: CallbackContext):
         update.effective_message.reply_document(
             document=output,
             filename="groups_list.txt",
-            caption="Here be the list of groups in my database.",
+            caption="ʙᴇʀɪᴋᴜᴛ ɪɴɪ ᴀᴅᴀʟᴀʜ ᴅᴀғᴛᴀʀ ɢʀᴜᴘ ᴅᴀʟᴀᴍ ᴅᴀᴛᴀʙᴀsᴇ sᴀʏᴀ.",
         )
 
 
@@ -156,7 +156,7 @@ def __user_info__(user_id):
 
 
 def __stats__():
-    return f"• {sql.num_users()} users, across {sql.num_chats()} chats"
+    return f"• {sql.num_users()} ᴜsᴇʀs, sᴄʀᴏss {sql.num_chats()} chats"
 
 
 def __migrate__(old_chat_id, new_chat_id):
