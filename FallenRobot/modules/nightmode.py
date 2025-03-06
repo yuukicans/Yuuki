@@ -66,18 +66,18 @@ openhehe = ChatBannedRights(
 async def close_ws(event):
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-            await event.reply("🤦🏻‍♂️You are not admin so you can't use this command...")
+            await event.reply("🤦🏻‍♂️ᴀɴᴅᴀ ʙᴜᴋᴀɴ ᴀᴅᴍɪɴ, ᴅᴀɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ...")
             return
 
     if not event.is_group:
-        await event.reply("You Can Only Enable Night Mode in Groups.")
+        await event.reply("ᴀɴᴅᴀ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴍᴇɴɢᴀᴋᴛɪᴘᴋᴀɴ ᴍᴏᴅᴇ ᴍᴀʟᴀᴍ ᴅɪ ɢʀᴜᴘ.")
         return
     if is_nightmode_indb(str(event.chat_id)):
-        await event.reply("This Chat is Has Already Enabled Night Mode.")
+        await event.reply("ᴏʙʀᴏʟᴀɴ ɪɴɪ ᴛᴇʟᴀʜ ᴍᴇɴɢᴀᴋᴛɪᴘᴋᴀɴ ᴍᴏᴅᴇ ᴍᴀʟᴀᴍ.")
         return
     add_nightmode(str(event.chat_id))
     await event.reply(
-        f"Added Chat {event.chat.title} With Id {event.chat_id} To Database. **This Group Will Be Closed On 12Am(IST) And Will Opened On 06Am(IST)**"
+        f"ᴍᴇɴᴀᴍʙᴀʜ ᴏʙʀᴏʟᴀɴ {event.chat.title} ᴅᴇɴɢᴀɴ ɪᴅ {event.chat_id} ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ. **ɢʀᴜᴘ ɪɴɪ ᴅɪ ᴛᴜᴛᴜᴘ ᴘᴀᴅᴀ ᴘᴜᴋᴜʟ 𝟷𝟸 ᴘᴀɢɪ ᴅᴀɴ ᴀᴋᴀɴ ᴅɪʙᴜᴋᴀ ᴘᴀᴅᴀ ᴘᴜᴋᴜʟ 𝟶𝟼 ᴘᴀɢɪ**"
     )
 
 
@@ -85,18 +85,18 @@ async def close_ws(event):
 async def disable_ws(event):
     if event.is_group:
         if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-            await event.reply("🤦🏻‍♂️You are not admin so you can't use this command...")
+            await event.reply("🤦🏻‍♂️ᴀɴᴅᴀ ʙᴜᴋᴀɴ ᴀᴅᴍɪɴ, ᴅᴀɴ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ...")
             return
 
     if not event.is_group:
-        await event.reply("You Can Only Disable Night Mode in Groups.")
+        await event.reply("ᴀɴᴅᴀ ʜᴀɴʏᴀ ᴅᴀᴘᴀᴛ ᴍᴇɴᴏɴᴀᴋᴛɪᴘᴋᴀɴ ᴍᴏᴅᴇ ᴍᴀʟᴀᴍ ᴅɪ ɢʀᴜᴘ.")
         return
     if not is_nightmode_indb(str(event.chat_id)):
-        await event.reply("This Chat is Has Not Enabled Night Mode.")
+        await event.reply("ᴏʙʀᴏʟᴀɴ ɪɴɪ ʙᴇʟᴜᴍ ᴍᴇɴɢᴀᴋᴛɪᴘᴋᴀɴ ᴍᴏᴅᴇ ᴍᴀʟᴀᴍ.")
         return
     rmnightmode(str(event.chat_id))
     await event.reply(
-        f"Removed Chat {event.chat.title} With Id {event.chat_id} From Database."
+        f"ᴏʙʀᴏʟᴀɴ ᴅɪ ʜᴀᴘᴜs  {event.chat.title} ᴅᴇɴɢᴀɴ ɪᴅ {event.chat_id} ᴅᴀʀɪ ᴅᴀᴛᴀʙᴀsᴇ."
     )
 
 
@@ -108,7 +108,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                f"**Night Mode Started**\n\n`Group Is Closing Till 6 Am, Only admins can messages in this chat.`\n\n__Powered By {BOT_NAME}__",
+                f"**ᴍᴏᴅᴇ ᴍᴀʟᴀᴍ ᴅɪ ᴍᴜʟᴀɪ**\n\n`ɢʀᴏᴜᴘ ᴛᴜᴛᴜᴘ sᴀᴍᴘᴀɪ ᴊᴀᴍ 𝟼 ᴘᴀɢɪ, ʜᴀɴʏᴀ ᴀᴅᴍɪɴ ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ ᴅɪ ᴄʜᴀᴛ ɪɴɪ.`\n\n__ᴅɪᴅᴜᴋᴜɴɢ ᴏʟᴇʜ {BOT_NAME}__",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -116,7 +116,7 @@ async def job_close():
                 )
             )
         except Exception as e:
-            logger.info(f"Unable To Close Group {warner} - {e}")
+            logger.info(f"ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴜᴛᴜᴘ ɢʀᴏᴜᴘ {warner} - {e}")
 
 
 # Run everyday at 12am
@@ -133,7 +133,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                f"**Night Mode Ended**\n\n`Group is opening again now everyone can send messages in this chat.`\n__Powered By {BOT_NAME}__",
+                f"**ᴍᴏᴅᴇ ᴍᴀʟᴀᴍ ʙᴇʀᴀᴋʜɪʀ**\n\nɢʀᴏᴜᴘ ᴅɪ ʙᴜᴋᴀ ʟᴀɢɪ sᴇᴋᴀʀᴀɴɢ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇɴɢɪʀɪᴍ ᴘᴇsᴀɴ ᴅᴀʟᴀᴍ ᴏʙʀᴏʟᴀɴ ɪɴɪ.\n__ᴅɪᴅᴜᴋᴜɴɢ ᴏʟᴇʜ {BOT_NAME}__",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -141,7 +141,7 @@ async def job_open():
                 )
             )
         except Exception as e:
-            logger.info(f"Unable To Open Group {warner.chat_id} - {e}")
+            logger.info(f"ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇᴍʙᴜᴋᴀ ɢʀᴜᴘ {warner.chat_id} - {e}")
 
 
 # Run everyday at 06
@@ -152,10 +152,10 @@ scheduler.start()
 __help__ = """
 *Admins Only*
 
-❍ /nightmode*:* Adds Group to NightMode Chats
- ❍ /rmnight*:* Removes Group From NightMode Chats
+❍ /nightmode*:* ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ɢʀᴏᴜᴘ ᴋᴇ ɴɪɢʜᴛᴍᴏᴅᴇ ᴄʜᴀᴛ
+ ❍ /rmnight*:* ᴍᴇɴɢʜᴀᴘᴜs ɢʀᴏᴜᴘ ᴅᴀʀɪ ɴɪɢʜᴛᴍᴏᴅᴇ ᴄʜᴀᴛ
 
-*Note:* Night Mode chats get Automatically closed at 12 am(IST) and Automatically openned at 6 am(IST) to Prevent Night Spams.
+*Note:* ᴏʙʀᴏʟᴀɴ ᴍᴏᴅᴇ ᴍᴀʟᴀᴍ ᴀᴋᴀɴ ᴅɪ ᴛᴜᴛᴜᴘ sᴇᴄᴀʀᴀ ᴏᴛᴏᴍᴀᴛɪs ᴘᴀᴅᴀ ᴘᴜᴋᴜʟ 𝟷𝟸 ᴍᴀʟᴀᴍ ᴅᴀɴ ᴅɪ ʙᴜᴋᴀ sᴇᴄᴀʀᴀ ᴏᴛᴏᴍᴀᴛɪs ᴘᴀᴅᴀ ᴘᴜᴋᴜʟ 𝟼 ᴘᴀɢɪ ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴇɢᴀʜ sᴘᴀᴍ ᴅɪ ᴍᴀʟᴀᴍ ʜᴀʀɪ.
 """
 
 __mod_name__ = "ɴɪɢʜᴛ"
