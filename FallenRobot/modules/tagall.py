@@ -30,10 +30,10 @@ async def mentionall(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.respond("__Only admins can mention all!__")
+        return await event.respond("ʜᴀɴʏᴀ ᴀᴅᴍɪɴ ʏᴀɴɢ ʙɪsᴀ ᴘʀᴏsᴇs ᴛᴀɢ ᴀʟʟ!")
 
     if event.pattern_match.group(1) and event.is_reply:
-        return await event.respond("__Give me one argument!__")
+        return await event.respond("ʙᴇʀɪᴋᴀɴ ᴍɪɴɪᴍᴀʟ 𝟷 ᴋᴀᴛᴀ ᴜɴᴛᴜᴋ ᴘʀᴏsᴇs ᴛᴀɢᴀʟʟ")
     elif event.pattern_match.group(1):
         mode = "text_on_cmd"
         msg = event.pattern_match.group(1)
@@ -42,7 +42,7 @@ async def mentionall(event):
         msg = await event.get_reply_message()
         if msg == None:
             return await event.respond(
-                "__ɪ ᴄᴀɴ'ᴛ ᴍᴇɴᴛɪᴏɴ ᴍᴇᴍʙᴇʀs ғᴏʀ ᴏʟᴅᴇʀ ᴍᴇssᴀɢᴇs! (ᴍᴇssᴀɢᴇs ᴡʜɪᴄʜ ᴀʀᴇ sᴇɴᴛ ʙᴇғᴏʀᴇ ɪ'ᴍ ᴀᴅᴅᴇᴅ ᴛᴏ ɢʀᴏᴜᴘ__"
+                "sᴀʏᴀ ᴛɪᴅᴀᴋ ʙɪsᴀ ᴘʀᴏsᴇs ᴛᴀɢ ᴀʟʟ ᴜɴᴛᴜᴋ ᴘᴇsᴀɴ ʟᴀᴍᴀ! (ᴘᴇsᴀɴ ʏᴀɴɢ ᴅɪ ᴋɪʀɪᴍ sᴇʙᴇʟᴜᴍ sᴀʏᴀ ᴍᴀsᴜᴋ ᴋᴇ ɢʀᴏᴜᴘ"
             )
     else:
         return await event.respond(
@@ -87,19 +87,19 @@ async def cancel_spam(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.respond("__Only admins can execute this command!__")
+        return await event.respond("ʜᴀɴʏᴀ ᴀᴅᴍɪɴ ʏᴀɴɢ ᴅᴀᴘᴀᴛ ᴍᴇɴᴊᴀʟᴀɴᴋᴀɴ ᴘʀɪɴᴛᴀʜ ɪɴɪ")
 
     else:
         try:
             spam_chats.remove(event.chat_id)
         except:
             pass
-        return await event.respond("__Stopped mention.__")
+        return await event.respond("ᴛᴀɢ ᴀʟʟ ᴍᴇɴᴛɪᴏɴ ʙᴇʀʜᴇɴᴛɪ")
 
 
 __mod_name__ = "ᴛᴀɢ ᴀʟʟ"
 __help__ = """
-*Only for admins*
+*ʜᴀɴʏᴀ ᴜɴᴛᴜᴋ ᴀᴅᴍɪɴ*
 
-❍ /tagall or @all '(reply to message or add another message) To mention all members in your group, without exception.'
+❍ /all '(ʀᴇᴘʟʏ ᴘᴇsᴀɴ ʏᴀɴɢ ᴍᴀᴜ ᴅɪ ᴛᴀɢ ᴀʟ) ᴜɴᴛᴜᴋ ᴘʀᴏsᴇs ᴍᴇ ᴛᴀɢ ᴀʟʟ ᴍᴇᴍʙᴇʀ ɢʀᴏᴜᴘ.'
 """
