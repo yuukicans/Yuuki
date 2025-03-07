@@ -78,7 +78,7 @@ PM_START_TEXT = """
 *๏ ɢᴀ ᴀᴅᴀ ʏᴀɴɢ sᴘᴇsɪᴀʟ sᴀᴍᴀ ᴀᴊᴀ ᴋᴇᴋ ʙᴏᴛ ᴍᴜsɪᴄ ʟᴀᴇɴ*
 *๏ ʙᴏᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴄ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ*
 ─────────────────
-*๏ ᴅᴇᴠᴇʟᴏᴘᴇʀ 👑: @YuukiCans*
+*๏ ᴅᴇᴠᴇʟᴏᴘᴇʀ 👑: @YuukiCan*
 ─────────────────
 *๏ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟ ᴅᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ⚠️*
 """
@@ -352,7 +352,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Yuuki", url=f"https://t.me/Yuukicans"),
+                        InlineKeyboardButton(text="Yuuki", url=f"https://t.me/Yuukican"),
                     ],
                     [
                         InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
@@ -691,7 +691,7 @@ def main():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="Owner", url=f"https://t.me/Yuukicans"),
+                            InlineKeyboardButton(text="Owner", url=f"https://t.me/Yuukican"),
                             InlineKeyboardButton(text="Support", url=f"https://t.me/YuukiMusicSupport "),
                         ],
                     ],
