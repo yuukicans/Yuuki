@@ -420,12 +420,18 @@ def Source_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "source_back":
         query.message.edit_text(
-            text=f"*» {BOT_NAME} ᴍᴜsɪᴄ ɢʀᴜᴘ ғɪᴛᴜʀ*"
+            text=f"*» {BOT_NAME} ᴍᴜsɪᴄ ɢʀᴜᴘ ғɪᴛᴜʀ*\n"
             
 f"\n๏ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ ᴘᴇʀɪɴᴛᴀʜ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ᴍᴜsɪᴄ / ᴠɪᴅᴇᴏ."
-f"\n\n/play ᴏʀ /vplay : ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀɢᴜɴᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ɢʀᴏᴜᴘ / ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ."
-f"\n\n/playforce ᴏʀ /vplayforce : ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀғᴜɴɢsɪ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜʟᴀɪ ʟᴀɢᴜ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ᴘᴇʀᴀɴɢᴋᴀᴛ ᴀɴᴅᴀ."
-f"\n\n/cplay ᴏʀ /cvplay : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ / ᴠɪᴅᴇᴏ ᴅɪᴄʜᴀɴɴᴇʟ ʏᴀɴɢ ᴛᴇʀʜᴜʙᴜɴɢ.", 
+f"\n\n๏ /play ᴏʀ /vplay : ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀɢᴜɴᴀ ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ᴅᴀɴ ᴠɪᴅᴇᴏ ᴅɪ ɢʀᴏᴜᴘ / ᴄʜᴀɴɴᴇʟ ᴀɴᴅᴀ."
+f"\n๏ /Pause : ᴘᴇʀɪɴᴛᴀʜ ᴜɴᴛᴜᴋ ᴘᴀᴜsᴇ ᴍᴜsɪᴋ sᴀᴀᴛ sᴛʀᴇᴀᴍɪɴɢ."
+f"\n๏ /resume : ᴘᴇʀɪɴᴛᴀʜ ᴜɴᴛᴜᴋ ʀᴇsᴜᴍᴇ ᴍᴜsɪᴋ sᴀᴀᴛ sᴛʀᴇᴀᴍɪɴɢ."
+f"\n๏ /skip : ᴘᴇʀɪɴᴛᴀʜ ᴜɴᴛᴜᴋ sᴋɪᴘ ᴍᴜsɪᴋ sᴀᴀᴛ sᴛʀᴇᴀᴍɪɴɢ.
+f"\n๏ /end : ᴘᴇʀɪɴᴛᴀʜ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʀʜᴇɴᴛɪᴋᴀɴ ᴍᴜsɪᴋ sᴀᴀᴛ sᴛʀᴇᴀᴍɪɴɢ.
+f"\n\n๏ /ping : ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ sʏsᴛᴇᴍ sᴛᴀᴛs ʙᴏᴛ.
+f"\n๏ /sudolist : ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ʙᴇʙᴇʀᴀᴘᴀ sᴜᴅᴏ ʟɪsᴛ ʙᴏᴛ.
+f"\n\n๏ /song : ᴜɴᴛᴜᴋ ᴅᴏᴡɴʟᴏᴀᴅ sᴇsᴜᴀɪ ʀᴇǫᴜᴇsᴛ ᴀᴛᴀᴜ ʏᴀɴɢ ᴀɴᴅᴀ ᴘᴇʀɪɴᴛᴀʜᴋᴀɴ.
+f"\n๏ /search : ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ʙᴇʙᴇʀᴀᴘᴀ ʟᴀɢᴜ / ᴠɪᴅᴇᴏ ᴅɪ ʏᴏᴜᴛᴜʙᴇ.,
             
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
