@@ -368,20 +368,20 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Asupan 1", url=f"https://t.me/+n6YKSjSuM443ZDI1"),
-                        InlineKeyboardButton(text="Asupan 2", url=f"https://t.me/+fKsIbFvDhSxlMThl"),
+                        InlineKeyboardButton(text="ASUPAN 1", url=f"https://t.me/+n6YKSjSuM443ZDI1"),
+                        InlineKeyboardButton(text="ASUPAN 2", url=f"https://t.me/+fKsIbFvDhSxlMThl"),
                     ],
                     [
-                        InlineKeyboardButton(text="Asupan 3", url=f"https://t.me/+JUmhxGMtgSExNjNl"),
-                        InlineKeyboardButton(text="Asupan 4", url=f"https://t.me/+C9LhDktpM842ODc1"),
+                        InlineKeyboardButton(text="BOKEP 1", url=f"https://t.me/+JUmhxGMtgSExNjNl"),
+                        InlineKeyboardButton(text="BOKEP 2", url=f"https://t.me/+C9LhDktpM842ODc1"),
                     ],
                     [
-                        InlineKeyboardButton(text="Asupan 5", url=f"https://t.me/+60MWU_Zw3xFkMjZl"),
-                        InlineKeyboardButton(text="Asupan 6", url=f"https://t.me/+hmu1lfOcGv83M2Vl"),
+                        InlineKeyboardButton(text="PAPRATE 1", url=f"https://t.me/+60MWU_Zw3xFkMjZl"),
+                        InlineKeyboardButton(text="PAPRATE 2", url=f"https://t.me/+hmu1lfOcGv83M2Vl"),
                     ],
                     [
-                        InlineKeyboardButton(text="Asupan 7", url=f"https://t.me/+Ypzl9nN17xdlNjBl"),
-                        InlineKeyboardButton(text="Asupan 8", url=f"https://t.me/+MyerIUYqibs2MjFl"),
+                        InlineKeyboardButton(text="MEDIA 1", url=f"https://t.me/+Ypzl9nN17xdlNjBl"),
+                        InlineKeyboardButton(text="MEDIA 2", url=f"https://t.me/+MyerIUYqibs2MjFl"),
                     ],
                     [
                         InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
