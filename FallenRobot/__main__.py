@@ -78,7 +78,7 @@ PM_START_TEXT = """
 *๏ ɢᴀ ᴀᴅᴀ ʏᴀɴɢ sᴘᴇsɪᴀʟ sᴀᴍᴀ ᴀᴊᴀ ᴋᴇᴋ ʙᴏᴛ ᴍᴜsɪᴄ ʟᴀᴇɴ*
 *๏ ʙᴏᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴄ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ*
 ─────────────────
-*๏ ᴅᴇᴠᴇʟᴏᴘᴇʀ 👑: @UcalMeVin*
+*๏ ᴅᴇᴠᴇʟᴏᴘᴇʀ 👑: @YuukiCans*
 ─────────────────
 *๏ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟ ᴅᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ⚠️*
 """
@@ -94,7 +94,7 @@ buttons = [
         InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ⁉️", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 📩", url=f"https://t.me/InfoRobotCalvin"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 📩", url=f"https://t.me/YuukiMusicSupport"),
         InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ 💈", callback_data="fallen_support"),
     ],
 ]
@@ -210,7 +210,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="ᴄᴀʟᴠɪɴ ʙᴏᴛ ᴀᴋᴛɪᴘ🔥 !\n<b>ᴀᴋᴛɪᴘ ᴅᴀʀɪ​:</b> <code>{}</code>".format(
+            caption="Yuuki Robot Active🔥 !\n<b>Aktip Dari​:</b> <code>{}</code>".format(
                 uptime
                 
             ),
@@ -360,7 +360,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
+                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
                     ],
                 ]
             ),
@@ -373,14 +373,23 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴏғғɪᴄɪᴀʟ sᴇᴄʀᴇᴛ", url=f"https://t.me/SecretVibesOfc"),
+                        InlineKeyboardButton(text="Asupan 1", url=f""),
+                        InlineKeyboardButton(text="Asupan 2", url=f""),
                     ],
                     [
-                        InlineKeyboardButton(text="sᴇᴄʀᴇᴛ ɪʙᴇs🔞", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
-                        InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ🔞", url=f"https://t.me/+9rg8DENaRZw5ODBl"),
+                        InlineKeyboardButton(text="Asupan 3", url=f""),
+                        InlineKeyboardButton(text="Asupan 4", url=f""),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
+                        InlineKeyboardButton(text="Asupan 5", url=f""),
+                        InlineKeyboardButton(text="Asupan 6", url=f""),
+                    ],
+                    [
+                        InlineKeyboardButton(text="Asupan 7", url=f""),
+                        InlineKeyboardButton(text="Asupan 8", url=f""),
+                    ],
+                    [
+                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
                     ],
                 ]
             ),
@@ -400,16 +409,16 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=f"""*๏ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ / ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ + ᴍᴀɴᴀɢᴇ ᴄᴀʟᴠɪɴ.*""",
+            text=f"""*๏ Dibawah ini adalah beberapa module / peintah bot music + manage yuuki .*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴍᴜsɪᴄ🎧", callback_data="source_back"),
-                        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ🗂", callback_data="help_back"),
+                        InlineKeyboardButton(text="Music🎧", callback_data="source_back"),
+                        InlineKeyboardButton(text="Manage🗂", callback_data="help_back"),
                     ],
                     [
-                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back")
+                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back")
                     ],
                 ]
             ),
@@ -427,7 +436,7 @@ f"\n\n/cplay ᴏʀ /cvplay : ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ / �
             reply_markup=InlineKeyboardMarkup(
                [
                    [
-                       InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="source_"),
+                       InlineKeyboardButton(text="Kembali", callback_data="source_"),
                    ],
                ]
             ),
@@ -680,15 +689,15 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-๏ 🔥{BOT_NAME} ᴀᴄᴛɪᴠᴇ
-\n━━━━━━━━━━━━━\n๏ ʙᴏᴛ ɪɴɪ ᴅᴀᴘᴀᴛ ᴅɪᴘᴇʀɢᴜɴᴀᴋᴀɴ ᴏʟᴇʜ sᴇᴍᴜᴀ ᴏʀᴀɴɢ ᴅᴇɴɢᴀɴ sʏᴀʀᴀᴛ, ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━
+๏ 🔥{BOT_NAME} Active
+\n━━━━━━━━━━━━━\n๏ ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━
 """,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/UcalMeVin"),
-                            InlineKeyboardButton(text="ᴀsᴜᴘᴀɴ", url=f"https://t.me/+kUWAHj8kxs9kMzRl "),
+                            InlineKeyboardButton(text="Owner", url=f"https://t.me/Yuukicans"),
+                            InlineKeyboardButton(text="Support", url=f"https://t.me/YuukiMusicSupport "),
                         ],
                     ],
                 )
