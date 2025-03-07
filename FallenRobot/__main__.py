@@ -91,10 +91,10 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="ᴅᴏɴᴀᴛɪᴏɴ 💰", callback_data="fallen_"),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 📩", url=f"https://t.me/InfoRobotCalvin"),
+        InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ⁉️", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ⁉️", callback_data="source_"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 📩", url=f"https://t.me/InfoRobotCalvin"),
         InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ 💈", callback_data="fallen_support"),
     ],
 ]
@@ -353,14 +353,11 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ǫʀɪs💸", url=f"https://t.me/InfoRobotCalvin/34",
+                            text="ǫʀɪs💸", url=f"https://t.me/InfoRobotCalvin/554",
                         ),
                         InlineKeyboardButton(
-                            text="ᴅᴀɴᴀ💸", url=f"https://t.me/InfoRobotCalvin/32"
+                            text="ᴅᴀɴᴀ💸", url=f"https://t.me/InfoRobotCalvin/225"
                         ),
-                        InlineKeyboardButton(
-                            text="ᴏᴠᴏ💸", url=f"https://t.me/InfoRobotCalvin/33"
-                        ),              
                     ],
                     [
                         InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
@@ -379,7 +376,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="ᴏғғɪᴄɪᴀʟ sᴇᴄʀᴇᴛ", url=f"https://t.me/SecretVibesOfc"),
                     ],
                     [
-                        InlineKeyboardButton(text="sᴇᴄʀᴇᴛ ᴠɪʙᴇs🔞", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
+                        InlineKeyboardButton(text="sᴇᴄʀᴇᴛ ɪʙᴇs🔞", url=f"https://t.me/+2o1vTH3XWv43OWU9"),
                         InlineKeyboardButton(text="ᴍᴇᴅɪᴀ ᴀɴɢᴇʟ🔞", url=f"https://t.me/+9rg8DENaRZw5ODBl"),
                     ],
                     [
