@@ -13,7 +13,7 @@ async def awake(_, message: Message):
     TEXT += f"» ᴅᴇᴠᴇʟᴏᴘᴇʀ : [Yuuki](tg://user?id={OWNER_ID})\n━━━━━━━━━━━━━\n\nsɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ɢʀᴏᴜᴘ ᴅᴀɴ sᴜᴘᴘᴏʀᴛ ᴋᴀᴍɪ ᴜɴᴛᴜᴋ ɪᴊɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ."
     BUTTON = [
         [
-            InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/YuukiCans"),
+            InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/YuukiCan"),
             InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
         ]
     ]
