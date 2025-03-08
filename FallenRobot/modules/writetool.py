@@ -19,9 +19,9 @@ def handwrite(update: Update, context: CallbackContext):
         caption=f"""
 ʙᴇʀʜᴀꜱɪʟ ᴍᴇɴᴜʟɪꜱ ᴛᴇxᴛ 💘
 
-✨**ᴅɪᴛᴜʟɪs ᴏʟᴇʜ :** [{BOT_NAME}](https://t.me/{BOT_USERNAME})
-✨**ᴘᴇʀᴍɪɴᴛᴀᴀɴ ᴅᴀʀɪ :** {update.effective_user.first_name}
-❄ **ʟɪɴᴋ :** `{req}`""",
+✨ᴅɪᴛᴜʟɪs ᴏʟᴇʜ : [{BOT_NAME}](https://t.me/{BOT_USERNAME})
+✨ᴘᴇʀᴍɪɴᴛᴀᴀɴ ᴅᴀʀɪ : {update.effective_user.first_name}
+❄ ʟɪɴᴋ : `{req}`""",
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
             [
