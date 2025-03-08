@@ -454,15 +454,15 @@ __mod_name__ = "ʙʟᴀᴄᴋʟɪsᴛ"
 __help__ = """
 ᴍᴏᴅᴜʟᴇ ɪɴɪ ʙᴇʀғᴜɴɢsɪ ᴜɴᴛᴜᴋ ᴍᴇᴍғɪʟᴛᴇʀ ᴋᴀᴛᴀ ᴋᴀᴛᴀ ʏᴀɴɢ ʙᴇʀsɪғᴀᴛ ᴍᴇɴɢᴀɴɢɢᴜ ᴅᴀɴ ʙᴇʀɢᴜɴᴀ ᴜɴᴛᴜᴋ ᴍᴇɴɢʜɪɴᴅᴀʀɪ ᴅᴀʀɪ sᴘᴀᴍᴍᴇʀ!
 
-*Nᴏᴛᴇ*: ᴋᴀᴛᴀ ʙʟᴀᴄᴋʟɪsᴛ ᴛɪᴅᴀᴋ ʙᴇʀғᴜɴɢsɪ ʙᴀɢɪ ᴀᴅᴍɪɴ.
+*ɴᴋᴛᴇs*: ᴋᴀᴛᴀ ʙʟᴀᴄᴋʟɪsᴛ ᴛɪᴅᴀᴋ ʙᴇʀғᴜɴɢsɪ ʙᴀɢɪ ᴀᴅᴍɪɴ.
 
 
  ❍ /blacklist*:* ᴍᴇʟɪʜᴀᴛ ᴅᴀғᴛᴀʀ ᴋᴀᴛᴀ ʏᴀɴɢ ᴅɪ ʙʟᴀᴄᴋʟɪsᴛ.
 
 Aᴅᴍɪɴ Oɴʟʏ:
- ❍ /bl or /addbl <triggers>*:* ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴋᴀᴛᴀ ᴋᴀᴛᴀ ᴜɴᴛᴜᴋ ᴅɪ ᴍᴀsᴜᴋᴀɴ ᴋᴇ ᴅᴀғᴛᴀʀ ʙʟᴀᴄᴋʟɪsᴛ.
- ❍ /un or /unbl <triggers>*:* ᴍᴇɴɢʜᴀᴘᴜs ᴋᴀᴛᴀ ᴋᴀᴛᴀ ᴅᴀʀɪ ᴅᴀғᴛᴀʀ ʙʟᴀᴄᴋʟɪsᴛ sᴇʙᴇʟᴜᴍ ɴʏᴀ.
- ❍ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* ʙᴇʀғᴜɴɢsɪ ᴜɴᴛᴜᴋ ᴍᴜᴛᴇ/ʙᴀɴ/ᴋɪᴄᴋ ᴘᴀʀᴀ ᴘᴇɴɢɢᴜɴᴀ.
+ ❍ /bl or /addbl <triggers>*:* ᴄᴏʙᴀɪɴ ᴀᴊᴀ sᴇɴᴅɪʀɪ.
+ ❍ /un or /unbl <triggers>*:* ᴄᴏʙᴀɪɴ ᴀᴊᴀ sᴇɴᴅɪʀɪ.
+ ❍ /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>*:* ᴄᴏʙᴀɪɴ ᴀᴊᴀ sᴇɴᴅɪʀɪ.
 """
 
 BLACKLIST_HANDLER = DisableAbleCommandHandler(
