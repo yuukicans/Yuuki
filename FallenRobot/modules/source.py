@@ -13,11 +13,11 @@ from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, pbot
 async def repo(_, message: Message):
     await message.reply_photo(
         photo=START_IMG,
-        caption=f"""**ʜᴇʏ {message.from_user.mention},
+        caption=f"""ʜᴇʟʟᴏ {message.from_user.mention},
 
-ɪ ᴀᴍ [{BOT_NAME}](https://t.me/{BOT_USERNAME})**
+sᴀʏᴀ ᴀᴅᴀʟᴀʜ : [{BOT_NAME}](https://t.me/{BOT_USERNAME})
 
-**» ᴅᴇᴠᴇʟᴏᴘᴇʀ :** Yuuki
+» ᴅᴇᴠᴇʟᴏᴘᴇʀ : @Yuukican
 """,
         reply_markup=InlineKeyboardMarkup(
             [
