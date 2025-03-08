@@ -16,7 +16,7 @@ async def purge_messages(event):
 
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [5510539512]:
+    ) and event.from_id not in [422998061]:
         await event.reply("Only Admins are allowed to use this command")
         return
 
@@ -54,7 +54,7 @@ async def delete_messages(event):
 
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [5510539512]:
+    ) and event.from_id not in [422998061]:
         await event.reply("Only Admins are allowed to use this command")
         return
 
@@ -72,8 +72,8 @@ async def delete_messages(event):
 
 
 __help__ = """
- ❍ /del*:* deletes the message you replied to
- ❍ /purge*:* deletes all messages between this and the replied to message.
+ ❍ /del*:* ᴍᴇɴɢʜᴀᴘᴜs ᴘᴇsᴀɴ ʏᴀɴɢ ᴀɴᴅᴀ ʀᴇᴘʟʏ
+ ❍ /purge*:* ᴍᴇɴɢʜᴀᴏᴜs sᴇᴍᴜᴀ ᴘᴇsᴀɴ ᴘᴇɴɢɢᴜɴᴀ ʏᴀɴɢ ᴀɴᴅᴀ ʀᴇᴘʟɪ.
 """
 
 PURGE_HANDLER = purge_messages, events.NewMessage(pattern="^[!/]purge$")
