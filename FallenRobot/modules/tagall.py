@@ -46,7 +46,7 @@ async def mentionall(event):
             )
     else:
         return await event.respond(
-            "ʀᴇᴘʟʏ ᴘᴇꜱᴀɴ ᴍᴀɴᴀ ʏᴀɴɢ ᴍᴀᴜ ᴅɪ ᴛᴀɢᴀʟʟ ᴍᴇᴋ!"
+            "ʀᴇᴘʟʏ ᴘᴇꜱᴀɴ ᴍᴀɴᴀ ʏᴀɴɢ ɪɴɢɪɴ ᴀɴᴅᴀ ᴛᴀɢᴀʟʟ!"
         )
 
     spam_chats.append(chat_id)
@@ -75,7 +75,7 @@ async def mentionall(event):
 @client.on(events.NewMessage(pattern="^/cancel$"))
 async def cancel_spam(event):
     if not event.chat_id in spam_chats:
-        return await event.respond("ɢᴀ ᴀᴅᴀ ʏᴀɴɢ ʜᴀʀᴜs ɢᴡ ʙᴇʀʜᴇɴᴛɪɪɴ ᴛᴏᴅ...__")
+        return await event.respond("ɢᴀ ᴀᴅᴀ ʏᴀɴɢ ʜᴀʀᴜs sᴀʏᴀ ʙᴇʀʜᴇɴᴛɪᴋᴀɴ...")
     is_admin = False
     try:
         partici_ = await client(GetParticipantRequest(event.chat_id, event.sender_id))
