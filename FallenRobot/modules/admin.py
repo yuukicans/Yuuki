@@ -34,18 +34,18 @@ def set_sticker(update: Update, context: CallbackContext):
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
         return msg.reply_text(
-            "» ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴩᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴄʜᴀɴɢᴇ ɢʀᴏᴜᴩ ɪɴғᴏ ʙᴀʙʏ !"
+            "» ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴀᴋsᴇs ᴜɴᴛᴜᴋ ᴜʙᴀʜ ɪɴғᴏ ɢʀᴜᴘ!"
         )
 
     if msg.reply_to_message:
         if not msg.reply_to_message.sticker:
             return msg.reply_text(
-                "» ʀᴇᴩʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ ᴛᴏ sᴇᴛ ɪᴛ ᴀs ɢʀᴏᴜᴩ sᴛɪᴄᴋᴇʀ ᴩᴀᴄᴋ !"
+                "» ʀᴇᴘʟʏ sᴛɪᴄᴋᴇʀ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ sᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ ɢʀᴜᴘ !"
             )
         stkr = msg.reply_to_message.sticker.set_name
         try:
             context.bot.set_chat_sticker_set(chat.id, stkr)
-            msg.reply_text(f"» sᴜᴄᴄᴇssғᴜʟʟʏ sᴇᴛ ɢʀᴏᴜᴩ sᴛɪᴄᴋᴇʀs ɪɴ {chat.title}!")
+            msg.reply_text(f"» ʙᴇʀʜᴀsɪʟ ᴍᴇɴɢᴜʙᴀʜ sᴛɪᴄᴋᴇʀ ɢʀᴜᴘ ᴅɪ {chat.title}!")
         except BadRequest as excp:
             if excp.message == "Participants_too_few":
                 return msg.reply_text(
@@ -53,7 +53,7 @@ def set_sticker(update: Update, context: CallbackContext):
                 )
             msg.reply_text(f"ᴇʀʀᴏʀ ! {excp.message}.")
     else:
-        msg.reply_text("» ʀᴇᴩʟʏ ᴛᴏ ᴀ sᴛɪᴄᴋᴇʀ ᴛᴏ sᴇᴛ ɪᴛ ᴀs ɢʀᴏᴜᴩ sᴛɪᴄᴋᴇʀ ᴩᴀᴄᴋ !")
+        msg.reply_text("» ʀᴇᴘʟʏ sᴛɪᴄᴋᴇʀ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ sᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋ ɢʀᴜᴘ!")
 
 
 @bot_admin
@@ -64,7 +64,7 @@ def setchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("» ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴩᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴄʜᴀɴɢᴇ ɢʀᴏᴜᴩ ɪɴғᴏ ʙᴀʙʏ !")
+        msg.reply_text("» ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴀᴋsᴇs ᴜɴᴛᴜᴋ ᴜʙᴀʜ ɪɴғᴏ ɢʀᴜᴘ!")
         return
 
     if msg.reply_to_message:
@@ -73,15 +73,15 @@ def setchatpic(update: Update, context: CallbackContext):
         elif msg.reply_to_message.document:
             pic_id = msg.reply_to_message.document.file_id
         else:
-            msg.reply_text("» ʏᴏᴜ ᴄᴀɴ ᴏɴʟʏ sᴇᴛ ᴩʜᴏᴛᴏs ᴀs ɢʀᴏᴜᴩ ᴩғᴩ !")
+            msg.reply_text("» ᴀɴᴅᴀ ʜᴀɴʏᴀ ʙɪsᴀ sᴇᴛ ᴘᴏᴛᴏ ɢʀᴏᴜᴘ !")
             return
-        dlmsg = msg.reply_text("» ᴄʜᴀɴɢɪɴɢ ɢʀᴏᴜᴩ's ᴩʀᴏғɪʟᴇ ᴩɪᴄ...")
+        dlmsg = msg.reply_text("» ᴍᴇɴɢʜᴀɴᴛɪ ᴘʀᴏғɪʟ ɢʀᴏᴜᴘ...")
         tpic = context.bot.get_file(pic_id)
         tpic.download("gpic.png")
         try:
             with open("gpic.png", "rb") as chatp:
                 context.bot.set_chat_photo(int(chat.id), photo=chatp)
-                msg.reply_text("» sᴜᴄᴄᴇssғᴜʟʟʏ sᴇᴛ ɢʀᴏᴜᴩ ᴩʀᴏғɪʟᴇ ᴩɪᴄ !")
+                msg.reply_text("» ʙᴇʀʜᴀsɪʟ ᴍᴇɴɢᴜʙᴀʜ ᴘᴏᴛᴏ ɢʀᴏᴜᴘ !")
         except BadRequest as excp:
             msg.reply_text(f"ᴇʀʀᴏʀ ! {excp.message}")
         finally:
@@ -89,7 +89,7 @@ def setchatpic(update: Update, context: CallbackContext):
             if os.path.isfile("gpic.png"):
                 os.remove("gpic.png")
     else:
-        msg.reply_text("» ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴩʜᴏᴛᴏ ᴏʀ ғɪʟᴇ ᴛᴏ sᴇᴛ ɪᴛ ᴀs ɢʀᴏᴜᴩ ᴩʀᴏғɪʟᴇ ᴩɪᴄ !")
+        msg.reply_text("» ʀᴇᴘʟʏ ᴘᴏᴛᴏ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴜʙᴀʜ ᴘʀᴏғɪʟ ɢʀᴏᴜᴘ !")
 
 
 @bot_admin
@@ -100,11 +100,11 @@ def rmchatpic(update: Update, context: CallbackContext):
     user = update.effective_user
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
-        msg.reply_text("» ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴩᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴄʜᴀɴɢᴇ ɢʀᴏᴜᴩ ɪɴғᴏ ʙᴀʙʏ !")
+        msg.reply_text("» ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴀᴋsᴇs ᴜɴᴛᴜᴋ ᴜʙᴀʜ ɪɴғᴏ ɢʀᴜᴘ!")
         return
     try:
         context.bot.delete_chat_photo(int(chat.id))
-        msg.reply_text("» sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ ɢʀᴏᴜᴩ's ᴅᴇғᴀᴜʟᴛ ᴩʀᴏғɪʟᴇ ᴩɪᴄ !")
+        msg.reply_text("» ʙᴇʀʜᴀsɪʟ ᴍᴇɴɢʜᴀᴘᴜs ᴘʀᴏғɪʟ ɢʀᴏᴜᴘ !")
     except BadRequest as excp:
         msg.reply_text(f"ᴇʀʀᴏʀ ! {excp.message}.")
         return
@@ -777,7 +777,7 @@ def adminlist(update, context):
     if update.effective_message.chat.type == "private":
         send_message(
             update.effective_message,
-            "» ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ɪɴ ɢʀᴏᴜᴩ's ɴᴏᴛ ɪɴ ᴩᴍ.",
+            "» ᴘᴇʀɪɴᴛᴀʜ ɪɴɪ ʜᴀɴʏᴀ ʙɪsᴀ ᴅɪ ɢᴜɴᴀᴋᴀɴ ᴅɪ ɢʀᴏᴜᴘ.",
         )
         return
 
@@ -787,7 +787,7 @@ def adminlist(update, context):
 
     try:
         msg = update.effective_message.reply_text(
-            "» ғᴇᴛᴄʜɪɴɢ ᴀᴅᴍɪɴs ʟɪsᴛ...",
+            "» ᴍᴇɴɢᴀᴍʙɪʟ ᴀᴅᴍɪɴ ʟɪsᴛ...",
             parse_mode=ParseMode.HTML,
         )
     except BadRequest:
@@ -822,7 +822,7 @@ def adminlist(update, context):
         # if user.username:
         #    name = escape_markdown("@" + user.username)
         if status == "creator":
-            text += "\n 🥀 ᴏᴡɴᴇʀ :"
+            text += "\n ᴏᴡɴᴇʀ :"
             text += "\n<code> • </code>{}\n".format(name)
 
             if custom_title:
