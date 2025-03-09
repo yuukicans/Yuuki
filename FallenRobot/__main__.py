@@ -76,11 +76,10 @@ PM_START_TEXT = """
 
 *๏ sᴀʏᴀ ᴀᴅᴀʟᴀʜ* {}
 *๏ ɢᴀ ᴀᴅᴀ ʏᴀɴɢ sᴘᴇsɪᴀʟ sᴀᴍᴀ ᴀᴊᴀ ᴋᴇᴋ ʙᴏᴛ ᴍᴜsɪᴄ ʟᴀᴇɴ*
-*๏ ʙᴏᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ᴅᴀɴ ᴍᴇᴍᴜᴛᴀʀ ᴍᴜꜱɪᴄ ᴅɪɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴇɴɢᴀɴ ʙᴇʀʙᴀɢᴀɪ ꜰɪᴛᴜʀ*
 ─────────────────
 *๏ ᴅᴇᴠᴇʟᴏᴘᴇʀ 👑: @YuukiCan*
 ─────────────────
-*๏ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟ ᴅᴀɴ ᴄᴏᴍᴍᴀɴᴅꜱ ⚠️*
+*๏ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟᴇ ᴅᴀɴ ᴘᴇʀɪɴᴛᴀʜ ⚠️*
 """
 
 buttons = [
@@ -210,7 +209,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             START_IMG,
-            caption="Yuuki Robot Active🔥 !\n<b>Aktip Dari​:</b> <code>{}</code>".format(
+            caption="ʏᴜᴜᴋɪ ʀᴏʙᴏᴛ ᴀᴄᴛɪᴠᴇ🔥 !\n<b>ᴀᴋᴛɪᴘ ᴅᴀʀɪ ​:</b> <code>{}</code>".format(
                 uptime
                 
             ),
@@ -351,10 +350,10 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Yuuki", url=f"https://t.me/Yuukican"),
+                        InlineKeyboardButton(text="ʏᴜᴜᴋɪ", url=f"https://t.me/Yuukican"),
                     ],
                     [
-                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
+                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
                     ],
                 ]
             ),
@@ -383,7 +382,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="MEDIA 2", url=f"https://t.me/+MyerIUYqibs2MjFl"),
                     ],
                     [
-                        InlineKeyboardButton(text="Kembali", callback_data="fallen_back"),
+                        InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
                     ],
                 ]
             ),
@@ -403,13 +402,13 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=f"""*๏ Dibawah ini adalah beberapa module / peintah bot music + manage yuuki .*""",
+            text=f"""*๏ ᴅɪʙᴀᴡᴀʜ ɪɴɪ ᴀᴅᴀʟᴀʜ ʙᴇʙᴇʀᴀᴘᴀ ᴍᴏᴅᴜʟᴇ / ᴘᴇʀɪɴᴛᴀʜ ʙᴏᴛ ᴍᴜsɪᴄ + ᴍᴀɴᴀɢᴇ ʏᴜᴜᴋɪ.*""",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Music🎧", callback_data="source_back"),
-                        InlineKeyboardButton(text="Manage🗂", callback_data="help_back"),
+                        InlineKeyboardButton(text="ᴍᴜsɪᴄ🎧", callback_data="source_back"),
+                        InlineKeyboardButton(text="ᴍᴀɴᴀɢᴇ🗂", callback_data="help_back"),
                     ],
                     [
                         InlineKeyboardButton(text="Kembali", callback_data="fallen_back")
@@ -436,7 +435,7 @@ f"\n๏ /search : ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ʙᴇʙᴇʀᴀᴘᴀ ʟᴀ�
             reply_markup=InlineKeyboardMarkup(
                [
                    [
-                       InlineKeyboardButton(text="Kembali", callback_data="source_"),
+                       InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="source_"),
                    ],
                ]
             ),
@@ -455,7 +454,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="ʜᴇʟᴘ",
+                                text="ʙᴀɴᴛᴜᴀɴ",
                                 url="https://t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -689,15 +688,15 @@ def main():
                 chat_id=f"@{SUPPORT_CHAT}",
                 photo=START_IMG,
                 caption=f"""
-๏ 🔥{BOT_NAME} Active
+๏ 🔥{BOT_NAME} ᴀᴄɪᴛᴠᴇ
 \n━━━━━━━━━━━━━\n๏ ᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━
 """,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="Owner", url=f"https://t.me/Yuukican"),
-                            InlineKeyboardButton(text="Support", url=f"https://t.me/YuukiMusicSupport "),
+                            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/Yuukican"),
+                            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/YuukiMusicSupport "),
                         ],
                     ],
                 )
