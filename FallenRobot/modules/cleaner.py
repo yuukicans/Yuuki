@@ -69,20 +69,20 @@ def set_blue_text_must_click(update: Update, context: CallbackContext):
         val = args[0].lower()
         if val in ("off", "no"):
             sql.set_cleanbt(chat.id, False)
-            reply = "Bluetext cleaning has been disabled for <b>{}</b>".format(
+            reply = "ᴘᴇᴍʙᴇʀsɪʜᴀɴ ʙʟᴜᴇᴛᴇxᴛ ᴛᴇʟᴀʜ ᴅɪ ɴᴏɴᴀᴋᴛɪᴘᴋᴀɴ ᴜɴᴛᴜᴋ <b>{}</b>".format(
                 html.escape(chat.title)
             )
             message.reply_text(reply, parse_mode=ParseMode.HTML)
 
         elif val in ("yes", "on"):
             sql.set_cleanbt(chat.id, True)
-            reply = "Bluetext cleaning has been enabled for <b>{}</b>".format(
+            reply = "ᴘᴇᴍʙᴇʀsɪʜᴀɴ ʙʟᴜᴇᴛᴇxᴛ ᴛᴇʟᴀʜ ᴅɪᴀᴋᴛɪᴘᴋᴀɴ ᴜɴᴛᴜᴋ <b>{}</b>".format(
                 html.escape(chat.title)
             )
             message.reply_text(reply, parse_mode=ParseMode.HTML)
 
         else:
-            reply = "Invalid argument.Accepted values are 'yes', 'on', 'no', 'off'"
+            reply = "ᴀʀɢᴜᴍᴇɴ ᴛɪᴅᴀᴋ ᴠᴀʟɪᴅ, ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ ᴅɪᴛᴇʀɪᴍᴀ ᴀᴅᴀʟᴀʜ 'yes', 'on', 'no', 'off'"
             message.reply_text(reply)
     else:
         clean_status = sql.is_enabled(chat.id)
@@ -102,15 +102,15 @@ def add_bluetext_ignore(update: Update, context: CallbackContext):
         val = args[0].lower()
         added = sql.chat_ignore_command(chat.id, val)
         if added:
-            reply = "<b>{}</b> has been added to bluetext cleaner ignore list.".format(
+            reply = "<b>{}</b> ᴛᴇʟᴀʜ ᴅɪᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇᴅᴀғᴛᴀᴛ ᴀʙᴀɪᴋᴀɴ ᴘᴇᴍʙᴇʀsɪʜ ʙʟᴜᴇᴛᴇxᴛ.".format(
                 args[0]
             )
         else:
-            reply = "Command is already ignored."
+            reply = "ᴘᴇʀɪɴᴛᴀʜ sᴜᴅᴀʜ ᴅɪ ᴀʙᴀɪᴋᴀɴ."
         message.reply_text(reply, parse_mode=ParseMode.HTML)
 
     else:
-        reply = "No command supplied to be ignored."
+        reply = "ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ ᴅɪ ʙᴇʀɪᴋᴀɴ ᴜɴᴛᴜᴋ ᴅɪᴀʙᴀɪᴋᴀɴ."
         message.reply_text(reply)
 
 
@@ -124,16 +124,16 @@ def remove_bluetext_ignore(update: Update, context: CallbackContext):
         removed = sql.chat_unignore_command(chat.id, val)
         if removed:
             reply = (
-                "<b>{}</b> has been removed from bluetext cleaner ignore list.".format(
+                "<b>{}</b> ᴛᴇʟᴀʜ ᴅɪʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀғᴛᴀʀ ᴀʙᴀɪᴋᴀɴ ᴘᴇᴍʙᴇʀsɪʜ ʙʟᴜᴇᴛᴇxᴛ.".format(
                     args[0]
                 )
             )
         else:
-            reply = "Command isn't ignored currently."
+            reply = "ᴘᴇʀɪɴᴛᴀʜ ᴛɪᴅᴀᴋ ᴅɪ ᴀʙᴀɪᴋᴀɴ sᴀᴀᴛ ɪɴɪ."
         message.reply_text(reply, parse_mode=ParseMode.HTML)
 
     else:
-        reply = "No command supplied to be unignored."
+        reply = "ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ ᴅɪ ʙᴇʀɪᴋᴀɴ ᴜɴᴛᴜᴋ ᴅɪ ᴀʙᴀɪᴋᴀɴ."
         message.reply_text(reply)
 
 
@@ -145,15 +145,15 @@ def add_bluetext_ignore_global(update: Update, context: CallbackContext):
         val = args[0].lower()
         added = sql.global_ignore_command(val)
         if added:
-            reply = "<b>{}</b> has been added to global bluetext cleaner ignore list.".format(
+            reply = "<b>{}</b> ᴛᴇʟᴀʜ ᴅɪ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇᴅᴀғᴛᴀʀ ᴘᴇᴍʙᴇʀsɪʜ ʙʟᴜᴇᴛᴇxᴛ ɢʟᴏʙᴀʟ.".format(
                 args[0]
             )
         else:
-            reply = "Command is already ignored."
+            reply = "ᴘᴇʀɪɴᴛᴀʜ sᴜᴅᴀʜ ᴅɪᴀʙᴀɪᴋᴀɴ."
         message.reply_text(reply, parse_mode=ParseMode.HTML)
 
     else:
-        reply = "No command supplied to be ignored."
+        reply = "ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ ᴅɪ ʙᴇʀɪᴋᴀɴ ᴜɴᴛᴜᴋ ᴅɪ ᴀʙᴀɪᴋᴀɴ."
         message.reply_text(reply)
 
 
@@ -165,15 +165,15 @@ def remove_bluetext_ignore_global(update: Update, context: CallbackContext):
         val = args[0].lower()
         removed = sql.global_unignore_command(val)
         if removed:
-            reply = "<b>{}</b> has been removed from global bluetext cleaner ignore list.".format(
+            reply = "<b>{}</b> ᴛᴇʟᴀʜ ᴅɪ ʜᴀᴘᴜs ᴅᴀʀɪ ᴅᴀғᴛᴀʀ ᴀʙᴀɪᴋᴀɴ ᴘᴇᴍʙᴇʀsɪʜ ʙʟᴜᴇᴛᴇxᴛ ɢʟᴏʙᴀʟ.".format(
                 args[0]
             )
         else:
-            reply = "Command isn't ignored currently."
+            reply = "ᴘᴇʀɪɴᴛᴀʜ ᴛɪᴅᴀᴋ ᴅɪᴀʙᴀɪᴋᴀɴ sᴀᴀᴛ ɪɴɪ."
         message.reply_text(reply, parse_mode=ParseMode.HTML)
 
     else:
-        reply = "No command supplied to be unignored."
+        reply = "ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ ᴅɪʙᴇʀɪᴋᴀɴ ᴜɴᴛᴜᴋ ᴅɪ ᴀʙᴀɪᴋᴀɴ."
         message.reply_text(reply)
 
 
@@ -186,19 +186,19 @@ def bluetext_ignore_list(update: Update, context: CallbackContext):
     text = ""
 
     if global_ignored_list:
-        text = "The following commands are currently ignored globally from bluetext cleaning :\n"
+        text = "ᴘᴇʀɪɴᴛᴀʜ ʙᴇʀɪᴋᴜᴛ sᴀᴀᴛ ɪɴɪ ᴅɪ ᴀʙᴀɪᴋᴀɴ sᴇᴄᴀʀᴀ ɢʟᴏʙᴀʟ ᴅᴀʀɪ ᴘᴇᴍʙᴇʀsɪʜ ʙʟᴜᴇᴛᴇxᴛ :\n"
 
         for x in global_ignored_list:
             text += f" - <code>{x}</code>\n"
 
     if local_ignore_list:
-        text += "\nThe following commands are currently ignored locally from bluetext cleaning :\n"
+        text += "\nᴘᴇʀɪɴᴛᴀʜ ʙᴇʀɪᴋᴜᴛ sᴀᴀᴛ ɪɴɪ ᴅɪᴀʙᴀɪᴋᴀɴ sᴇᴄᴀʀᴀ ʟᴏᴋᴀʟ ᴅᴀʀɪ ᴘᴇᴍʙᴇʀsɪʜ ʙʟᴜᴇᴛᴇxᴛ :\n"
 
         for x in local_ignore_list:
             text += f" - <code>{x}</code>\n"
 
     if text == "":
-        text = "No commands are currently ignored from bluetext cleaning."
+        text = "ᴛɪᴅᴀᴋ ᴀᴅᴀ ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ sᴀᴀᴛ ɪɴɪ ᴅɪᴀʙᴀɪᴋᴀɴ ᴅᴀʀɪ ᴘᴇᴍʙᴇʀsɪʜ ʙʟᴜᴇᴛᴇxᴛ."
         message.reply_text(text)
         return
 
