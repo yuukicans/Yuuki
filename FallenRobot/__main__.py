@@ -77,7 +77,7 @@ PM_START_TEXT = """
 *๏ sᴀʏᴀ ᴀᴅᴀʟᴀʜ* {}
 *๏ ɢᴀ ᴀᴅᴀ ʏᴀɴɢ sᴘᴇsɪᴀʟ sᴀᴍᴀ ᴀᴊᴀ ᴋᴇᴋ ʙᴏᴛ ᴍᴜsɪᴄ ʟᴀᴇɴ*
 ─────────────────
-*๏ ᴅᴇᴠᴇʟᴏᴘᴇʀ 👑: @YuukiCan*
+*๏ ᴅᴇᴠᴇʟᴏᴘᴇʀ 👑: @UcalMeVin*
 ─────────────────
 *๏ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ᴍᴏᴅᴜʟᴇ ᴅᴀɴ ᴘᴇʀɪɴᴛᴀʜ ⚠️*
 """
@@ -93,7 +93,7 @@ buttons = [
         InlineKeyboardButton(text="ᴘᴇʀɪɴᴛᴀʜ ⁉️", callback_data="source_"),
     ],
     [
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 📩", url=f"https://t.me/YuukiMusicSupport"),
+        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ 📩", url=f"https://t.me/inforobotcalvin"),
         InlineKeyboardButton(text="ɢʀᴜᴘ ᴄʜᴀɴɴᴇʟ 💈", callback_data="fallen_support"),
     ],
 ]
@@ -350,7 +350,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ʏᴜᴜᴋɪ", url=f"https://t.me/Yuukican"),
+                        InlineKeyboardButton(text="𝗖𝗔𝗟𝗩𝗜𝗡", url=f"https://t.me/UCALMEVIN"),
                     ],
                     [
                         InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
@@ -695,8 +695,8 @@ def main():
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/Yuukican"),
-                            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/YuukiMusicSupport "),
+                            InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url=f"https://t.me/UCALMEVIN"),
+                            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/INFOROBOTCALVIN "),
                         ],
                     ],
                 )
