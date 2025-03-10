@@ -16,21 +16,21 @@ class Config(object):
     # Telegraph link of the image which will be shown at start command.
     START_IMG = "https://files.catbox.moe/0qe835.jpg"
 
-    SUPPORT_CHAT = "YuukiMusicSupport"  # Your Telegram support group chat username where your users will go and bother you
+    SUPPORT_CHAT = "InfoRobotCalvin"  # Your Telegram support group chat username where your users will go and bother you
 
     TOKEN = ""  # Get bot token from @BotFather on Telegram
 
     TIME_API_KEY = ""  # Get this value from https://timezonedb.com/api
 
-    OWNER_ID = 422998061  # User id of your telegram account (Must be integer)
+    OWNER_ID = 5510539512  # User id of your telegram account (Must be integer)
 
     # Optional fields
-    BL_CHATS = [422998061]  # List of groups that you want blacklisted.
-    DRAGONS = [422998061]  # User id of sudo users
-    DEV_USERS = [422998061]  # User id of dev users
-    DEMONS = [422998061]  # User id of support users
-    TIGERS = [422998061]  # User id of tiger users
-    WOLVES = [422998061]  # User id of whitelist users
+    BL_CHATS = [5510539512]  # List of groups that you want blacklisted.
+    DRAGONS = [5510539512]  # User id of sudo users
+    DEV_USERS = [5510539512]  # User id of dev users
+    DEMONS = [5510539512]  # User id of support users
+    TIGERS = [5510539512]  # User id of tiger users
+    WOLVES = [5510539512]  # User id of whitelist users
 
     ALLOW_CHATS = True
     ALLOW_EXCL = True
