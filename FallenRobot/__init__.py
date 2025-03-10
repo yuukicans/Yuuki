@@ -49,7 +49,7 @@ if ENV:
         "START_IMG", "https://files.catbox.moe/0qe835.jpg"
     )
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "yuukimusicSupport")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "inforobotcalvin")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
     TOKEN = os.environ.get("TOKEN", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
@@ -67,7 +67,7 @@ if ENV:
 
     try:
         DRAGONS = set(int(x) for x in os.environ.get("DRAGONS", "").split())
-        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "422998061").split())
+        DEV_USERS = set(int(x) for x in os.environ.get("DEV_USERS", "5510539512").split())
     except ValueError:
         raise Exception("Your sudo or dev users list does not contain valid integers.")
 
@@ -143,7 +143,7 @@ else:
 
 DRAGONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(422998061)
+DEV_USERS.add(5510539512)
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
