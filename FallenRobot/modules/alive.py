@@ -10,7 +10,7 @@ from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, SUPPORT_CHA
 @pbot.on_message(filters.command("alive"))
 async def awake(_, message: Message):
     TEXT = f"ʜᴀʟʟᴏ🔥 {message.from_user.mention},\nsᴀʏᴀ {BOT_NAME}\n━━━━━━━━━━━━━\nᴘᴀᴋᴀɪ ᴅᴇɴɢᴀɴ ʙɪᴊᴀᴋ ᴅᴀɴ ʙᴇʀᴛᴀɴɢɢᴜɴɢ ᴊᴀᴡᴀʙ.\n━━━━━━━━━━━━━\n"
-    TEXT += f"» ᴅᴇᴠᴇʟᴏᴘᴇʀ : [𝗖𝗔𝗟𝗩𝗜𝗡](tg://user?id={OWNER_ID})\n━━━━━━━━━━━━━\n\nsɪʟᴀʜᴋᴀɴ ᴊᴏɪɴ ɢʀᴏᴜᴘ ᴅᴀɴ sᴜᴘᴘᴏʀᴛ ᴋᴀᴍɪ ᴜɴᴛᴜᴋ ɪᴊɪɴ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ ɪɴɪ."
+    TEXT += f"» ᴅᴇᴠᴇʟᴏᴘᴇʀ : [𝗖𝗔𝗟𝗩𝗜𝗡](tg://user?id={OWNER_ID})\n━━━━━━━━━━━━━\n"
     BUTTON = [
         [
             InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/ucalmevin"),
