@@ -366,20 +366,14 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ASUPAN 1", url=f"https://t.me/+n6YKSjSuM443ZDI1"),
-                        InlineKeyboardButton(text="ASUPAN 2", url=f"https://t.me/+fKsIbFvDhSxlMThl"),
+                        InlineKeyboardButton(text="𝗦𝗘𝗖𝗥𝗘𝗧 𝗩𝗜𝗕𝗘𝗦", url=f"https://t.me/+62fcl2jc3GI0Yjll"),
                     ],
                     [
-                        InlineKeyboardButton(text="BOKEP 1", url=f"https://t.me/+JUmhxGMtgSExNjNl"),
-                        InlineKeyboardButton(text="BOKEP 2", url=f"https://t.me/+C9LhDktpM842ODc1"),
+                        InlineKeyboardButton(text="𝗦𝗘𝗖𝗥𝗘𝗧 𝗟𝗢𝗡𝗘𝗟𝗬", url=f"https://t.me/+pdeonCmuJgBiY2Zl"),
                     ],
                     [
-                        InlineKeyboardButton(text="PAPRATE 1", url=f"https://t.me/+60MWU_Zw3xFkMjZl"),
-                        InlineKeyboardButton(text="PAPRATE 2", url=f"https://t.me/+hmu1lfOcGv83M2Vl"),
-                    ],
-                    [
-                        InlineKeyboardButton(text="MEDIA 1", url=f"https://t.me/+Ypzl9nN17xdlNjBl"),
-                        InlineKeyboardButton(text="MEDIA 2", url=f"https://t.me/+MyerIUYqibs2MjFl"),
+                        InlineKeyboardButton(text="𝗔𝗦𝗨𝗣𝗔𝗡 𝟭", url=f"https://t.me/+G7-66UswKEplNzUx"),
+                        InlineKeyboardButton(text="𝗔𝗦𝗨𝗣𝗔𝗡 𝟮", url=f"https://t.me/+cPD8S8lTlaQ4Y2I1"),
                     ],
                     [
                         InlineKeyboardButton(text="ᴋᴇᴍʙᴀʟɪ", callback_data="fallen_back"),
